@@ -5,7 +5,7 @@ reduceArray.reduce((input, item) => {
 }, 11);
 
 // Function Composition
-let m = ((x + 2) / 5) * 4;
+// For ((x + 2) / 5) * 4;
 
 function addTwo(num) {
   return num + 2;
@@ -19,8 +19,13 @@ function multiplyByFour(num) {
   return num * 4;
 }
 
-let m = multiplyByFour(divideByFive(addTwo(3)));
+let m1 = multiplyByFour(divideByFive(addTwo(3)));
+console.log(
+  'Function composition for `((x + 2) / 5) * 4` with `x` of 3 is:',
+  m1
+);
 
-[addTwo, divideByFive, multiplyByFour].reduce((input, fun) => {
+let a = [addTwo, divideByFive, multiplyByFour].reduce((input, fun) => {
   return fun(input);
 }, 3);
+console.log('Function Composition for same using Array reduce - ', a);
