@@ -16,3 +16,17 @@ In other words, the evaluation order is: `z`, `y`, `x`
 A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).  
 In other words, a Closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.  
 To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function. The inner function will have access to the variables in the outer function scope, even after the outer function has returned.
+
+### Iterators and Generators
+
+An iterator lets you iterate through a collection's contents one at a time, pausing at each item.  
+An iterator is any object that implements the iterator protocol by having a next() method that returns a value property and a done property.
+
+TBC...
+
+### async - await
+
+async-await basically act as syntactic sugar on top of promises, making asynchronous code easier to write and to read afterwards.
+
+The word `async` before a function means one simple thing: a function always returns a promise.  
+`await`, that works only inside async functions, `await` makes JavaScript wait until that promise settles and returns its result.
