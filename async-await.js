@@ -1,3 +1,6 @@
+/* This consists Examples for Promise,
+   fetch, async and await using a fake api call. 
+*/
 var promise = new Promise(function (resolve, reject) {
   setTimeout(() => {
     if (false) {
@@ -20,6 +23,8 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
   .then((response) => response.json())
   .then((json) => console.log(json));
 
+// Using generator functions
+
 function* createFlow() {
   console.log('Me First');
   const data = yield fetch('https://jsonplaceholder.typicode.com/todos/1');
@@ -37,6 +42,7 @@ futureData.value.then((response) => {
   jsonData.value.then((json) => console.log(json));
 });
 
+// async & await
 async function createFlow() {
   console.log('Me First Async');
   const data = await fetch('https://jsonplaceholder.typicode.com/todos/1');
