@@ -51,3 +51,19 @@ JavaScript objects are dynamic "bags" of properties (referred to as own properti
 -   shared-number
 -   sleep
 -   Throttle
+
+### Promisification
+
+Promisification means transformation. It’s a conversion of a function that accepts a callback into a function returning a promise.
+
+### Throttle
+
+Throttling enforces a maximum number of times a function can be called over time. As in “execute this function at most once every 1000 milliseconds.”
+
+### Debounce
+
+Debouncing enforces that a function not be called again until a certain amount of time has passed without it being called. As in “execute this function only if 1000 milliseconds have passed without it being called.”
+
+### Coercion
+
+Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers). Type conversion is similar to type coercion because they both convert values from one data type to another with one key difference — type coercion is implicit whereas type conversion can be either implicit or explicit.
