@@ -41,3 +41,13 @@ JavaScript objects are dynamic "bags" of properties (referred to as own properti
 1. With Object.create()
 2. With a constructor
 3. With a class keyword
+
+### Week 12th - 16th Oct 2020:
+
+-   Coercion
+-   Debounce
+-   move-element
+-   promisify
+-   shared-number
+-   sleep
+-   Throttle
