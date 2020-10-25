@@ -58,6 +58,7 @@ function foo() {
     console.count('foo');
     console.trace();
 }
+
 foo();
 foo();
 foo();
