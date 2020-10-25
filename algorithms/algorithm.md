@@ -62,3 +62,22 @@ ________________
 3. Network Consumption
 4. Power Consumption
 5. Registers Usuage
+
+### Frequency count method
+
+```javascript
+    Algorithm sum(A, n) {
+        s = 0;                  ---- 1 unit of time
+        for(i = 0; i < n; i ++) ---- (n + 1) unit of time
+        {
+            s = s + A[i];       ---- n unit of time
+        }
+        return s;               ---- 1 unit of time
+    }
+    _________________________________________________
+                f(n) = 1 + (n + 1) + n + 1 = (2n + 3)
+
+    > i < n condition checks for n + 1 times
+    > Inside for loop block s = s + A[i] executes for n times
+```
+> Consider above sum function which will take arguments an array A and n will be the length of the array. Lets consider a [8, 3, 9, 7, 2] where length n will be 5. And FOR loop condition i < n will be tested for n + 1 times and in the last interation condition fails and loop executes for n times. i = 0 will be one time assignment.
