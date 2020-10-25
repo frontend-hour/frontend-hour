@@ -157,3 +157,69 @@ ________________
    s(n) = 3n^2 + 4 words O(n^2)
 ```
 ---
+
+### Time Complexity Examples
+
+#### Example 1 
+```c
+    for(i = 0; i < n; i ++)
+    {
+        statements ---- n times
+    }
+    __________________________
+                    f(n) = n
+                    O(n) = n
+```
+
+#### Example 2
+```c
+    for(i = n; i > n; i --)
+    {
+        statements ---- n times
+    }
+    __________________________
+                    f(n) = n
+                    O(n) = n
+```
+
+#### Example 3
+```c
+    for(i = 0; i < n; i = i + 2)
+    {
+        statements ---- (n/2) times
+    }
+    __________________________
+                    f(n) = (n/2)
+                    O(n) = n
+
+> Degree of polynomial is n so it is order of n
+> even if i = i + 20 it is order of n
+```
+
+#### Example 4 
+```c
+    for(i = 0; i < n; i ++)     ---- n + 1 times
+    {
+        for(j = 0; j < n; j ++) ---- n * (n + 1) times
+        {
+            statements          ---- n * n times
+        }
+    }
+    __________________________________________________
+                    f(n) = n^2
+                    O(n) = n^2
+```
+#### Example 5
+> looks similar to above examples but for nested loop condition is j < i
+```c
+    for(i = 0; i < n; i ++)     ---- n + 1 times
+    {
+        for(j = 0; j < i; j ++) ---- n * (n + 1) times
+        {
+            statements          ---- n * n times
+        }
+    }
+    __________________________________________________
+                    f(n) = n^2
+                    O(n) = n^2
+```
