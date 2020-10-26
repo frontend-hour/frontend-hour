@@ -1,5 +1,5 @@
 ## Introduction to Algorithms
----
+
 ### What is Algorithm?
 > An Algorithm is a step by step process for solving a computational problem
 ---
@@ -243,3 +243,14 @@ ________________
 
 > If we obeserve the total is the sum of n natural numbers n(n + 1)/2
 > That is n^2 + n / 2 and O(n) = n^2
+
+#### Example 6
+```c
+    p = 0;
+    for(i = 1; p <= n; i ++)     ---- n + 1 times
+    {
+        p = p + i;
+    }
+    __________________________________________________
+        k^2 > n
+```
