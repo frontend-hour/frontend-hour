@@ -4,19 +4,19 @@
 > An Algorithm is a step by step process for solving a computational problem
 ---
 ### Difference between Algorithm and Program
-| Algorithm | Program |
-|---|---|
-| Design Phase | Implementation Phase |
-| Domain Knowledge expert | Programmer |
-| Pseudo Code | Programming Language |
+| Algorithm                | Program                     |
+| ------------------------ | --------------------------- |
+| Design Phase             | Implementation Phase        |
+| Domain Knowledge expert  | Programmer                  |
+| Pseudo Code              | Programming Language        |
 | Not Dependent on Harware | Dependent on Harware and OS |
 ---
-| Priori Analysis | Posteriori Testing |
-|---|---|
-| Algorithm | Program |
+| Priori Analysis         | Posteriori Testing |
+| ----------------------- | ------------------ |
+| Algorithm               | Program            |
 | Independent on Language | Language Dependent |
-| Hardware Independent | Hardware Dependent |
-| Time & Function | Watch time & Bytes |
+| Hardware Independent    | Hardware Dependent |
+| Time & Function         | Watch time & Bytes |
 
 ---
 
@@ -105,21 +105,21 @@ ________________
         }
     }
     _________________________________________________
-                f(n) = 2n^2 + 2n + 1
-                O(n^2)
+                f(n) = 2n² + 2n + 1
+                O(n²)
 
     > matrix of size n * n both A & B
 ```
 #### Space analysis
 ```
-A    ---- n^2 word
-B    ---- n^2 word
-C    ---- n^2 word
+A    ---- n² word
+B    ---- n² word
+C    ---- n² word
 n    ---- 1 word
 j    ---- 1 word
 i    ---- 1 word
 ________________
-   s(n) = 3n^2 + 3 words O(n^2)
+   s(n) = 3n² + 3 words O(n²)
 ```
 
 #### multiplication of two matrix
@@ -138,23 +138,23 @@ ________________
         }
     }
     ________________________________________________________________
-                f(n) = (n + 1) + (n^2 + n) + n^2 + (n^3 + n^2) + n^3
-                     = 2n^3 + 3 n ^2 + 2n + 1
-                O(n^3)
+                f(n) = (n + 1) + (n² + n) + n² + (n³ + n²) + n³
+                     = 2n³ + 3 n² + 2n + 1
+                O(n³)
 
     > matrix of size n * n both A & B
 ```
 #### Space analysis
 ```
-A    ---- n^2 word
-B    ---- n^2 word
-C    ---- n^2 word
+A    ---- n² word
+B    ---- n² word
+C    ---- n² word
 n    ---- 1 word
 j    ---- 1 word
 i    ---- 1 word
 k    ---- 1 word
 ________________
-   s(n) = 3n^2 + 4 words O(n^2)
+   s(n) = 3n² + 4 words O(n²)
 ```
 ---
 
@@ -206,8 +206,8 @@ ________________
         }
     }
     __________________________________________________
-                    f(n) = n^2
-                    O(n) = n^2
+                    f(n) = n²
+                    O(n) = n²
 ```
 #### Example 5
 > looks similar to above examples but for nested loop condition is j < i
@@ -220,37 +220,60 @@ ________________
         }
     }
     __________________________________________________
-                    f(n) = (n^2 + 1)/2
-                    O(n) = n^2
+                    f(n) = (n² + 1)/2
+                    O(n) = n²
 ```
-| i | j | no. of times| total |
-|---|---|---|---|
-| 0 | 0 | 0 |
-| 1 | 0 | 1 | 1 |
-| - | 1 ( j < i ) failed | - |
-| 2 | 0 | 1 | 2 |
-| - | 1 | 1 |
-| - | 2 ( j < i ) failed | - |
-| 3 | 0 | 1 | 3 |
-| - | 1 | 1 | - |
-| - | 2 | 1 | - |
-| - | 3 ( j < i ) failed | - | - |
-| ' | ' | ' | ' |
-| ' | ' | ' | ' |
-| ' | ' | ' | ' |
-| n | - | n | n |
+| i   | j                  | no. of times | total |
+| --- | ------------------ | ------------ | ----- |
+| 0   | 0                  | 0            |
+| 1   | 0                  | 1            | 1     |
+| -   | 1 ( j < i ) failed | -            |
+| 2   | 0                  | 1            | 2     |
+| -   | 1                  | 1            |
+| -   | 2 ( j < i ) failed | -            |
+| 3   | 0                  | 1            | 3     |
+| -   | 1                  | 1            | -     |
+| -   | 2                  | 1            | -     |
+| -   | 3 ( j < i ) failed | -            | -     |
+| '   | '                  | '            | '     |
+| '   | '                  | '            | '     |
+| '   | '                  | '            | '     |
+| n   | -                  | n            | n     |
 
 
 > If we obeserve the total is the sum of n natural numbers n(n + 1)/2
-> That is n^2 + n / 2 and O(n) = n^2
+> That is n² + n / 2 and O(n) = n²
 
 #### Example 6
 ```c
     p = 0;
-    for(i = 1; p <= n; i ++)     ---- n + 1 times
+    for(i = 1; p <= n; i ++)
     {
         p = p + i;
     }
     __________________________________________________
-        k^2 > n
+        k > √n
 ```
+| i   | p                            | total      |
+| --- | ---------------------------- | ---------- |
+| 1   | 0 + 1                        | 0 + 1 = 1  |
+| 2   | 0 + 1 + 2                    | 1 + 2 = 3  |
+| 3   | 0 + 1 + 2 + 3                | 3 + 3 = 6  |
+| 4   | 0 + 1 + 2 + 3 + 4            | 6 + 4 = 10 |
+| '   | '                            | '          |
+| '   | '                            | '          |
+| k   | 0 + 1 + 2 + 3 + 4 + .... + k | k          |
+
+> `p <= n`   
+
+> p will be sum of k natural numbers k(k + 1) / 2
+
+> Condition will break at p > n
+
+> i.e (k(k + 1) / 2) > n 
+
+> (k² + k)/2 > n
+
+> k² > n
+
+> k > √n
