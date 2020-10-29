@@ -281,9 +281,9 @@ ________________
 
 #### Example 7
 ```c
-    for(i = 1; i < n; i = i *2)
+    for(i = 1; i < n; i = i * 2)
     {
-        statement
+        statement;
     }
     __________________________________________________
         k = log(n)
@@ -306,3 +306,69 @@ ________________
 > 2^k >= n
 
 > k = log(n)
+
+> log(n) will give decimal values - we can ceil or floor values
+
+> Lets suppose n = 8 i.e log(8) = 3
+
+> Let n = 10 i.e log(10) = 3.2 -> ceil value is 4
+
+> ⌈log(n)⌉ - ceil of log(n)
+
+#### Example 8
+```c
+    for(i = n; i >= 1; i = i / 2)
+    {
+        statement;
+    }
+    __________________________________________________
+        k = log(n)
+```
+| i |
+| --- |
+| n |
+| n / 2 |
+| n / 2² |
+| n / 2³ |
+| n / 2⁴ |
+| ' |
+| ' |
+| n / 2^k |
+
+> Loop will break at i < 1
+
+> Assume therefore i < 1 i.e (n/2^k) < 1
+
+> Equating (n/2^k) = 1 i.e n = 2^k
+
+> k = log(n) with base 2
+
+> which is O(log(n))
+
+#### Example 9
+```c
+    for(i = 0; i * i < n; i++)
+    {
+        statement;
+    }
+    __________________________________________________
+        k = log(n)
+```
+| i | i * i|
+| --- | --- |
+| 0 | 0 |
+| 1 | 1 |
+| 2 | 4 |
+| 3 | 9 |
+| 4 | 16
+| ' | ' |
+| ' | ' |
+| k | k² |
+
+> Loop will break at i² >= n 
+
+> Let us suppose condition break at i = k
+
+> k²>= n i.e k² = n
+
+> k = √n
