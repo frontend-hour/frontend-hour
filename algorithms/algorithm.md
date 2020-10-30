@@ -372,3 +372,58 @@ ________________
 > k²>= n i.e k² = n
 
 > k = √n
+
+#### Example 10
+```c
+    for(i = 0; i < n; i++)
+    {
+        statement; ---- n
+    }
+    for(j = 0; j < n; i++)
+    {
+        statement; ---- n
+    }
+    _____________________
+        n + n = 2n O(n)
+```
+
+#### Example 11
+```c
+    p = 0;
+    for(i = 1; i < n; i = i * 2)
+    {
+        p ++; ---- log(n)
+    }
+    for(j = 1; j < p; j = j * 2)
+    {
+        statement; ---- log(p)
+    }
+    _____________________
+        O(log₂ log₂(n))
+```
+> Here p executes for log(n) times
+
+> p will be incremented for log(n)
+
+> That is why it will be O(log log(n))
+
+#### Example 12
+```c
+    for(i = 0; i < n; i ++) ---- (n + 1)
+    {
+        for(j = 1; j < n; j = j * 2) ---- n * (log₂(n))
+        {
+            statement; ---- n*log₂(n)
+        }
+    }
+    _____________________________
+    2nlog₂(n) + n + 1 = O(nlog₂(n))
+```
+| Condition | Complexity |
+| --- | --- |
+| for(i = 0; i < n; i++) | O(n) |
+| for(i = 0; i < n; i = i + 2) | n/2 = O(n) |
+| for(i = n; i > 1; i --) | O(n) |
+| for(i = 1; i < n; i = i * 2) | O(log₂(n)) |
+| for(i = 1; i < n; i = i * 3) | O(log₃(n)) |
+| for(i = n; i > 1; i = i / 2) | O(log₂(n)) |
