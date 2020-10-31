@@ -254,14 +254,14 @@ ________________
     __________________________________________________
         k > √n
 ```
-| i   | p                            | total      |
-| --- | ---------------------------- | ---------- |
-| 1   | 0 + 1                        | 0 + 1 = 1  |
-| 2   | 0 + 1 + 2                    | 1 + 2 = 3  |
-| 3   | 0 + 1 + 2 + 3                | 3 + 3 = 6  |
-| 4   | 0 + 1 + 2 + 3 + 4            | 6 + 4 = 10 |
-| '   | '                            | '          |
-| '   | '                            | '          |
+| i   | p                            | total        |
+| --- | ---------------------------- | ------------ |
+| 1   | 0 + 1                        | 0 + 1 = 1    |
+| 2   | 0 + 1 + 2                    | 1 + 2 = 3    |
+| 3   | 0 + 1 + 2 + 3                | 3 + 3 = 6    |
+| 4   | 0 + 1 + 2 + 3 + 4            | 6 + 4 = 10   |
+| '   | '                            | '            |
+| '   | '                            | '            |
 | k   | 0 + 1 + 2 + 3 + 4 + .... + k | k(k + 1) / 2 |
 
 > `p <= n`   
@@ -288,16 +288,16 @@ ________________
     __________________________________________________
         k = log(n)
 ```
-| i | total |
-| --- | --- | 
-| 1 | 1  = 2⁰ |
-| 1 * 2 | 2 = 2¹ |
-| 2 * 2 | 4 = 2²|
-| 4 * 2 | 8 = 2³|
-| 8 * 2 | 16 = 2⁴|
-| ' | ' |
-| ' | ' |
-| 2^k |  |
+| i     | total   |
+| ----- | ------- |
+| 1     | 1  = 2⁰ |
+| 1 * 2 | 2 = 2¹  |
+| 2 * 2 | 4 = 2²  |
+| 4 * 2 | 8 = 2³  |
+| 8 * 2 | 16 = 2⁴ |
+| '     | '       |
+| '     | '       |
+| 2^k   |         |
 
 > Condition will break at i >= n
 
@@ -324,15 +324,15 @@ ________________
     __________________________________________________
         k = log(n)
 ```
-| i |
-| --- |
-| n |
-| n / 2 |
-| n / 2² |
-| n / 2³ |
-| n / 2⁴ |
-| ' |
-| ' |
+| i       |
+| ------- |
+| n       |
+| n / 2   |
+| n / 2²  |
+| n / 2³  |
+| n / 2⁴  |
+| '       |
+| '       |
 | n / 2^k |
 
 > Loop will break at i < 1
@@ -354,16 +354,16 @@ ________________
     __________________________________________________
         k = √n
 ```
-| i | i * i|
-| --- | --- |
-| 0 | 0 |
-| 1 | 1 |
-| 2 | 4 |
-| 3 | 9 |
-| 4 | 16
-| ' | ' |
-| ' | ' |
-| k | k² |
+| i   | i * i |
+| --- | ----- |
+| 0   | 0     |
+| 1   | 1     |
+| 2   | 4     |
+| 3   | 9     |
+| 4   | 16    |
+| '   | '     |
+| '   | '     |
+| k   | k²    |
 
 > Loop will break at i² >= n 
 
@@ -419,11 +419,225 @@ ________________
     _____________________________
     2nlog₂(n) + n + 1 = O(nlog₂(n))
 ```
-| Condition | Complexity |
-| --- | --- |
-| for(i = 0; i < n; i++) | O(n) |
+| Condition                    | Complexity |
+| ---------------------------- | ---------- |
+| for(i = 0; i < n; i++)       | O(n)       |
 | for(i = 0; i < n; i = i + 2) | n/2 = O(n) |
-| for(i = n; i > 1; i --) | O(n) |
+| for(i = n; i > 1; i --)      | O(n)       |
 | for(i = 1; i < n; i = i * 2) | O(log₂(n)) |
 | for(i = 1; i < n; i = i * 3) | O(log₃(n)) |
 | for(i = n; i > 1; i = i / 2) | O(log₂(n)) |
+
+### Analysis of IF & WHILE
+
+#### Types of loops
+```
+for i = 1 to n
+{
+    statement; ---- n times
+} 
+
+while(condition) {
+    statements;
+}
+
+do
+{
+    statements;
+} while(condition)
+
+> Atleast one time  it executes before checking the condition
+
+repeat
+{
+    statements;
+} util(condition)
+> Similar to do while but it repeats until condition failed
+```
+
+#### while loop
+
+```c
+i = 0; ---- 1 time
+while(i < n) ---- n + 1 times
+{
+    statements; ---- n times
+    i++
+}
+_____________________________
+    f(n) = 3n +2  = O(n)
+```
+
+#### Example
+
+```c
+a = 1;
+while(a < b)
+{
+    statements;
+    a = a * 2;
+}
+_______________
+    O(log₂(n))
+```
+| a       |
+| ------- |
+| 1 = 2⁰  |
+| 2 = 2¹  |
+| 4 = 2²  |
+| 8 = 2³  |
+| 16 = 2⁴ |
+| 32 = 2⁵ |
+| '       |
+| '       |
+| 2^k     |
+
+> Loop will break at a >= b
+
+> Lets suppose condition a >= b at a = 2^k
+
+> 2^k = b
+
+> k = log₂(b)
+
+```c
+i = n;
+while(i > 1)
+{
+    statements;
+    i = i / 2;
+}
+________________
+   O(log₂(n))
+```
+
+```c
+i = 1;
+k = 1;
+while(k < n)
+{
+    statements;
+    k = k + i;
+    i++;
+}
+________________
+    m = √n
+```
+
+| i   | k                        |
+| --- | ------------------------ |
+| 1   | 1                        |
+| 2   | 1 + 1 = 2                |
+| 3   | 2 + 2 = 4                |
+| 4   | 2 + 2 + 3 = 8            |
+| 5   | 2 + 2 + 3 + 4 = 11       |
+| '   | '                        |
+| '   | '                        |
+| x   | 2 + 2 + 3 + 4 + .... + m |
+
+> loop breaks at k >= n
+
+> 2 + 2 + 3 + 4 + .... + m this is sum of n natural numbers if the number in series is 1 
+
+> m(m + 1)/2 = n
+
+> m = √n
+
+```c
+while(m != n)
+{
+    if(m > n)
+        m = m - n;
+    else 
+        n = n - m;
+}
+_______________
+ O(n)
+```
+
+| m = 16 | n = 2 |
+| ------ | ----- |
+| 14     | 2     |
+| 12     | 2     |
+| 10     | 2     |
+| 8      | 2     |
+| 6      | 2     |
+| 4      | 2     |
+| 2      | 2     |
+
+> It will execute for 8 times i.e 16 / 2
+
+> i .e m / 2 = O(n)
+
+> minimum times O(1) and meximum time is O(n)
+
+```javascript
+Algorithm Test(n)
+{
+    if(n < 5)
+    {
+        console.log(n); ---- 1 time
+    }
+    else
+    {
+        for(i = 0; i < n; i ++)
+        {
+            console.log(i); ---- n times
+        }
+    }
+}
+________________________________
+    O(n)
+
+Algorithm Test(n)
+{
+    if(n < 5)
+    {
+        for(i = 0; i < n; i ++)
+        {
+            console.log(i); ---- n times
+        }
+    }
+}
+________________________________
+    O(n)
+```
+
+> In best case it executes for O(1) and in worst case it executes for O(n)
+
+### Types of time functions
+
+| Order            | Function Name |
+| ---------------- | ------------- |
+| O(1)             | Constant      |
+| O(log(n))        | Logarithemic  |
+| O(n)             | Linear        |
+| O(n²)            | Quadratic     |
+| O(n³)            | Cubic         |
+| O(2ⁿ) also O(nⁿ) | Exponentail   |
+
+#### Classes of functions in their increasing order of weightage
+
+`1 < log(n) < √n < n < nlog(n) < n² < n³ < ... < 2ⁿ < 3ⁿ < ... nⁿ`
+
+| log(n) | n   | n²  | 2ⁿ  |
+| ------ | --- | --- | --- |
+| 0      | 1   | 1   | 2   |
+| 1      | 2   | 4   | 4   |
+| 2      | 4   | 16  | 16  |
+| 3      | 8   | 64  | 256 |
+| 3.1    | 9   | 81  | 512 |
+
+`n^100 < 2^n`
+
+`n^k < 2^n`
+
+![time graph](./time-graph.png "Time Graph")
+
+### Asymptotic Notations
+
+| Notation | Name |
+| --- | --- |
+| O big-oh | Upper bound |
+| Ω big-omega | Lower bound |
+| θ Theta | Average bound |
