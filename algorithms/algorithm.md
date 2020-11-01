@@ -636,8 +636,8 @@ ________________________________
 
 ### Asymptotic Notations
 
-| Notation | Name |
-| --- | --- |
-| O big-oh | Upper bound |
-| Ω big-omega | Lower bound |
-| θ Theta | Average bound |
+| Notation    | Name          |
+| ----------- | ------------- |
+| O big-oh    | Upper bound   |
+| Ω big-omega | Lower bound   |
+| θ Theta     | Average bound |
