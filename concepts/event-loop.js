@@ -40,8 +40,8 @@ setTimeout(printHello, 0);
 const futureData = fetch('https://jsonplaceholder.typicode.com/todos/1');
 futureData.then(display);
 
-  blockSomeTime();
-  console.log('Me first');
+blockSomeTime();
+console.log('Me first');
 
   // Event loop in JS is a mechanism of checking the Call Stack to see if there is any function that needs to run from Callback Queue
 

@@ -1,8 +1,8 @@
 function debounce(fn, ms) {
     let timeoutId;
 
-    return function() {
-        if(timeoutId) {
+    return function () {
+        if (timeoutId) {
             clearTimeout(timeoutId);
         }
 

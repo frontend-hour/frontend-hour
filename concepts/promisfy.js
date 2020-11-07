@@ -32,7 +32,7 @@ function promisify(fn) {
     }
 }
 
-let promisifySetTimeout = promisify(setTimeout); 
+let promisifySetTimeout = promisify(setTimeout);
 
 function printNames() {
     console.log('Second Call back called');

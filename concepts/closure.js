@@ -24,11 +24,11 @@ function ticketBuilder(transport) {
     passengerNo++;
     console.log(
       'Your ticket in ' +
-        transport +
-        ' welcomes ' +
-        name +
-        '! and your passenger no is ' +
-        passengerNo
+      transport +
+      ' welcomes ' +
+      name +
+      '! and your passenger no is ' +
+      passengerNo
     );
   };
 }

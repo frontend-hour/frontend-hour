@@ -2,7 +2,7 @@ function throttle(fn, time) {
     let timeout;
 
     return function () {
-        if(timeout) {
+        if (timeout) {
             return;
         }
 

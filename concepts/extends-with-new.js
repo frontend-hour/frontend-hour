@@ -20,7 +20,7 @@ function PaidUserCreator(name, score, balance) {
 
 PaidUserCreator.prototype = Object.create(UserCreater);
 
-PaidUserCreator.prototype.printBalance =  function() {
+PaidUserCreator.prototype.printBalance = function () {
     console.log(this.balance);
 }
 
