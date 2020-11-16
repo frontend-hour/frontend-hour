@@ -173,7 +173,7 @@ ________________
 
 #### Example 2
 ```c
-    for(i = n; i > n; i --)
+    for(i = n; i > 0; i --)
     {
         statements ---- n times
     }
@@ -214,7 +214,7 @@ ________________
 ```c
     for(i = 0; i < n; i ++)     ---- n + 1 times
     {
-        for(j = 0; j < i; j ++) ---- n * (n + 1) times
+        for(j = 0; j < i; j ++)
         {
             statements          ---- n * n times
         }
