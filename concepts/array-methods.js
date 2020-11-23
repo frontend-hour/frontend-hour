@@ -2,6 +2,7 @@
 let newArray = [];
 let newArrayInstance = new Array;
 let newArrayInstanceWithValues = new Array(1, 2, 3, 4, 5);
+
 //This will create an array of length 5 instead of array with one element that is 5
 let newArrayInstanceWithValue = new Array(5);
 
