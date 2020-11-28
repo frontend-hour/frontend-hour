@@ -15,3 +15,19 @@ function flatArray(array, accumulator) {
 }
 
 console.log(flatArray(arr));
+
+
+// for in loop - Objects - Array is also object
+for(key in { a: 1, b : 2}) {
+
+}
+
+for(item in [1, 2, 3, 4]) {
+
+}
+
+// for of loop - Only for Array
+
+for(let item in [1, 2, 3, 4]) {
+
+}
