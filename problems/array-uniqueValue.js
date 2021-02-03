@@ -10,3 +10,12 @@ console.log('Unique1 ->', unique1);
 var unique2 = Array.from(new Set(array1));
 
 console.log('unique2', unique2);
+
+
+let chars = ['A', 'B', 'A', 'C', 'B'];
+
+let uniqArray = chars.filter((item, index) => {
+    return chars.indexOf(item) === index;
+});
+
+console.log('Unique Array', uniqArray);
