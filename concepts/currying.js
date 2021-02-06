@@ -29,3 +29,8 @@ function curryFun(fn, ...n) {
 let averageVal = curryFun(avg, 1, 2, 3, 4);
 
 console.log(averageVal(5, 6, 7, 8));
+
+
+// Good explaination of Currying
+
+// https://javascript.info/currying-partials#currying-what-for
