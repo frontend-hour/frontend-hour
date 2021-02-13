@@ -39,3 +39,21 @@ if (!Function.prototype.bind) {
         }
     }
 }
+
+
+
+if (!Function.prototype.bind) {
+    Function.prototype.bind = function () {
+        const context = this;
+        const boundContext = arguments[0];
+        const boundArguments = Array.from(arguments).slice(1);
+
+        if (typeof context !== 'function') {
+            throw new TypeError('Not a valid function.')
+        }
+        return function () {
+            const allArgs = boundArguments.concat(Array.from(arguments));
+            context.apply(boundContext, allArgs);
+        }
+    }
+}

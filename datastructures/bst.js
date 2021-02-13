@@ -78,18 +78,58 @@ BST.prototype.contains = function (value) {
 
 console.log(bst.contains(11))
 
+// DFT - Depth first traversal 
+
+BST.prototype.depthFirstTraversal = function (iteratorFunc, order) {
+    if (order === 'pre-order') iteratorFunc(this.value);
+    if (this.left) this.left.depthFirstTraversal(iteratorFunc, order);
+    if (order === 'in-order') iteratorFunc(this.value);
+    if (this.right) this.right.depthFirstTraversal(iteratorFunc, order);
+    if (order === 'post-order') iteratorFunc(this.value);
+};
 
 
+// BFT - Breadth First Traversal 
+
+BST.prototype.breadthFirstTraversal = function (iteratorFunc) {
+    var Queue = [this];
+    while (Queue.length) {
+        var treeNode = Queue.shift();
+        iteratorFunc(treeNode)
+        if (treeNode.left) Queue.push(treeNode.left);
+        if (treeNode.right) Queue.push(treeNode.right);
+    }
+}
+
+function log(node) {
+    return node.value;
+}
+
+bst.breadthFirstTraversal(log);
+
+// 60
+// 50
+// 70
+// 40
+// 75
+// 10
+// 105
+// 100
+// 350
 
 
+// Excercises -
+// Getting min value in tree 
 
+BST.prototype.getMinVal = function () {
+    if (this.left) return this.left.getMinVal()
+    else return this.value;
+}
 
-
-
-
-
-
-
+BST.prototype.getMaxVal = function () {
+    if (this.right) return this.right.getMaxVal();
+    else return this.value;
+}
 
 
 
