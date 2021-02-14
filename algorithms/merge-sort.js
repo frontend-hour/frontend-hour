@@ -34,3 +34,6 @@ function mergeArray(left, right) {
 let nums = [10, 5, 3, 8, 2, 6, 4, 7, 9, 1];
 
 console.log(mergeSort(nums));
+
+
+// Also a detailed example in https://stackabuse.com/merge-sort-in-javascript/
