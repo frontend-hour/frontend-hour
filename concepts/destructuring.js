@@ -56,3 +56,13 @@ var complexObj = {
 var { arrayProps: [first, { second }] } = complexObj;
 
 console.log(first, second);
+
+
+// Wesbos Tips
+
+// Since Array are objects we can object 
+const bikes = ['bianchi', 'miele', 'miyata', 'benotoo', 'panasonic'];
+// Grabbing first and last items in array with Object destructuring
+const { length, 0: first, [length - 1]: last } = bikes;
+console.log(first, last);
+
