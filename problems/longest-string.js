@@ -30,3 +30,38 @@ function findLongestString(inputString) {
 }
 
 console.log(findLongestString(input1));
+
+
+
+
+var firstName = 'Abhishek';    
+
+var lastName = 'Aggarwal';   
+
+  
+
+var personObj = {    
+
+    firstName: 'Raghu',    
+
+    lastName: 'Reddy',    
+
+    getFullName: () => {  
+
+        return this.firstName + ' ' + this.lastName;    
+
+    }   
+
+} 
+
+  
+
+let newFunc = personObj.getFullName;    
+
+console.log(newFunc()); // 
+
+console.log(personObj.getFullName()); //
+
+console.log(personObj.getFullName.call(window)); // 
+
+console.log(newFunc.bind(personObj)()); //
