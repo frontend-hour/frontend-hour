@@ -34,27 +34,16 @@ console.log(findLongestString(input1));
 
 
 
-var firstName = 'Abhishek';    
-
-var lastName = 'Aggarwal';   
-
-  
+var firstName = 'Malladi';    
+var lastName = 'Chaitanya';   
 
 var personObj = {    
-
     firstName: 'Raghu',    
-
     lastName: 'Reddy',    
-
     getFullName: () => {  
-
         return this.firstName + ' ' + this.lastName;    
-
-    }   
-
+    }
 } 
-
-  
 
 let newFunc = personObj.getFullName;    
 
