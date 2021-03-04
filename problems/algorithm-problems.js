@@ -62,6 +62,24 @@ var chunkArray = function (array, size) {
 
 // Sentence Capitalization
 
+function capSentence(sentence) {
+    var words = [];
+    for (let word of sentence.split(' ')) {
+        words.push(word[0].toUpperCase() + word.slice(1))
+    }
+    return words.join(' ');
+}
+
+console.log(capSentence('raghu rami reddy'));
+//"Raghu Rami Reddy"
+
+
+// Also find another article below 
 // https://scotch.io/courses/the-ultimate-guide-to-javascript-algorithms/sentence-capitalization
 
 
+function reverseStr(str) {
+    let a = str.split('');
+    a.map((item) => item.split('').reverse().join());
+
+}
