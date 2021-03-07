@@ -31,15 +31,15 @@
 // Test 3 Input
 // NULL
 
-let i1 = [1, 2, 3, 4, 5, 6];
-let x = 5;
+let i1 = [2, 4, 5, 6, 9, 11, 15];
+let x = 20;
 
 let pairs = [];
-for(let i = 0; i < i1.length; i++) {
-    for(let j = 0; j < i1.length; j++) {
-        if(i1[i]+i1[j] === x) {
+for (let i = 0; i < i1.length; i++) {
+    for (let j = 0; j < i1.length; j++) {
+        if (i1[i] + i1[j] === x) {
             let pair = i1[i] > i1[j] ? `${i1[j]},${i1[i]}` : `${i1[i]},${i1[j]}`;
-            if(pairs.indexOf(pair) == -1) {
+            if (pairs.indexOf(pair) == -1) {
                 pairs.push(pair);
             }
         }
