@@ -39,9 +39,7 @@ for (let i = 0; i < i1.length; i++) {
     for (let j = 0; j < i1.length; j++) {
         if (i1[i] + i1[j] === x) {
             let pair = i1[i] > i1[j] ? `${i1[j]},${i1[i]}` : `${i1[i]},${i1[j]}`;
-            if (pairs.indexOf(pair) == -1) {
-                pairs.push(pair);
-            }
+            pairs.indexOf(pair) == -1 && pairs.push(pair);
         }
     }
 }
