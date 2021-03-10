@@ -2,11 +2,11 @@ function foo() {
     let a = b = 0;
     a++;
     return a;
-  }
-  
-  foo();
-  typeof a; // => ???
-  typeof b; // => ???
+}
+
+foo();
+typeof a; // => ???
+typeof b; // => ???
 
 /*---------------------------------------*/
 
@@ -19,8 +19,8 @@ clothes[0]; // => ???
 
 const length = 4;
 const numbers = [];
-for (var i = 0; i < length; i++);{
-  numbers.push(i + 1);
+for (var i = 0; i < length; i++); {
+    numbers.push(i + 1);
 }
 
 numbers; // => ???
@@ -29,10 +29,10 @@ numbers; // => ???
 
 let i;
 for (i = 0; i < 3; i++) {
-  const log = () => {
-    console.log(i);
-  }
-  setTimeout(log, 100);
+    const log = () => {
+        console.log(i);
+    }
+    setTimeout(log, 100);
 }
 
 /*---------------------------------------*/
@@ -53,10 +53,25 @@ var a = Person('a');
 var b = new Person('b');
 var c = Person;
 function Person(name) {
-     this.first_name = name;
+    this.first_name = name;
 }
 
 console.log(a.first_name);
 console.log(b.first_name);
 console.log(c.first_name);
+
+/*---------------------------------------*/
+// finding the max characters
+
+let name = 'chaitanyakumar';
+let temp = {};
+
+for(let i = 0; i < name.length; i ++) {
+    if(temp[name[i]]) {
+        temp[name[i]] += 1;
+    } else {
+        temp[name[i]] = 1;
+    }
+}
+console.log(temp);
 
