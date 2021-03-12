@@ -43,9 +43,8 @@ chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 5)
 
 var chunkArray = function (array, size) {
     let result = []
-    let arrayCopy = [...array]
-    while (arrayCopy.length > 0) {
-        result.push(arrayCopy.splice(0, size))
+    while (array.length > 0) {
+        result.push(array.splice(0, size))
     }
     return result
 }
