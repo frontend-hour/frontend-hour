@@ -46,3 +46,35 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(pairs);
 
+
+
+// Added another type of Asking the same question -
+
+// Pair Sum N
+// Question – Given a sorted array of integers and a number num, write a function pairSumN which returns the first pair of integers whose sum equals to the given number num, return an empty array if the pair does not exist
+
+
+// Example
+
+// input: arr = [-3, -2, -1, 0, 1, 2, 3], num = 0
+// output: [-3, 3]
+
+// input: arr = [-1, 4, 5, 5, 6, 7, 8], num = 10
+// output: [4, 6]
+
+// input; arr = [1, 2, 3, 4, 5, 6], num = 20
+// output: []
+
+function pairSumNumbers(array) {
+    var pairNum = [];
+    var num = 10
+    for (var i = 0; i < array.length; i++) {
+        for (var j = i + 1; j < array.length; j++) {
+            if (array[i] + array[j] === num) {
+                pairNum.push(array[i], array[j])
+                return pairNum;
+            }
+        }
+    }
+    return pairNum;
+}
