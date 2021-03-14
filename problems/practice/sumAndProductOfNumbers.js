@@ -7,6 +7,30 @@
 // input: 91827
 // output: 27
 
+// Solution 1 
+function sumOfDigits(num) {
+    var sum = 0;
+    var numberArr = num.toString().split('');
+    sum = numberArr.reduce((acc, item) => Number(acc) + Number(item), sum);
+    return sum;
+}
+
+//   sumOfDigits(91827)
+
+// Solution 2 - Using recursion 
+
+function sumOfDigitsRecursion(num) {
+    let numStr = num.toString().split('');
+    let firstChar = numStr[0];
+    let remainingChars = numStr.slice(1);
+    if (remainingChars.length) {
+        return Number(firstChar) + sumOfDigitsRecursion(Number(remainingChars.join('')));
+    }
+    return Number(firstChar);
+}
+
+// sumOfDigitsRecursion(12345);
+
 function findSumOfGivenDigitsRecursion(digit) {
     if (isNaN(digit)) {
         return 'Not a valid Input';
@@ -37,5 +61,7 @@ function findProductOfTwoNumberRecursion(a, b) {
 }
 
 console.log(findProductOfTwoNumberRecursion(-8, 4));
+
+
 
 
