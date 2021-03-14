@@ -7,6 +7,17 @@ function findFactorial(n) {
 
 findFactorial(4);
 
+// solution 2
+
+function findFactorial(num) {
+    if (num) {
+        return num * findFactorial(num - 1)
+    }
+    return 1;
+}
+
+findFactorial(4)
+
 // input: 4
 // output: 24
 
@@ -47,3 +58,8 @@ function findFibonacci(nthElement, series, i) {
 }
 let sequence = findFibonacci(7); // Series
 let numberAtNthPlace = sequence[sequence.length - 1];
+
+
+// Can find a good example in the below link - 
+
+https://medium.com/quick-code/fibonacci-sequence-javascript-interview-question-iterative-and-recursive-solutions-6a0346d24053 
