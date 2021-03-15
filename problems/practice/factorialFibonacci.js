@@ -62,4 +62,29 @@ let numberAtNthPlace = sequence[sequence.length - 1];
 
 // Can find a good example in the below link - 
 
-// https://medium.com/quick-code/fibonacci-sequence-javascript-interview-question-iterative-and-recursive-solutions-6a0346d24053 
+// https://medium.com/quick-code/fibonacci-sequence-javascript-interview-question-iterative-and-recursive-solutions-6a0346d24053  
+
+// Solution 2 using recursion - 
+
+function fib(n) {
+    if (n < 2) {
+        return n
+    }
+    return fib(n - 1) + fib(n - 2)
+}
+
+// solution 3 - Iterative solution 
+
+function fibonacci(num) {
+    var arr = [0, 1]
+    for (i = 0; i < num + 1; i++) {
+        arr.push(arr[num - 2] + arr[num - 1])
+    }
+    return arr[num]
+}
+
+// Now look at the case when we call fib() with n=15. It took iterative solution 4ms, but it took recursive solution 1328ms to perform the same action. Why is that?
+
+// An algorithm in our iterative solution takes linear time to complete the task. Basically we iterate through the loop n-2 times, so Big O (notation used to describe our worst case scenario) would be simply equal to n in this case.
+
+// In case of recursion the solution take exponential time, that can be explained by the fact that the size of the tree exponentially grows when n increases. So for every additional element in the Fibonacci sequence we get an increase in function calls. Big O in this case is equal to 2^n.
