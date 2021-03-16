@@ -10,7 +10,7 @@ function commonElementsOfArrays(arr1, arr2) {
     return commonElements;
 }
 
-// I/P - commonElementsOfArrays([1,2,3,4,5,6], [3,4,5,6,7])
+// I/P - commonElementsOfArrays([1,2,3,4,5,6,4], [3,4,5,6,7,3])
 // O/P - Array(4) [ 3, 4, 5, 6 ]
 
 
