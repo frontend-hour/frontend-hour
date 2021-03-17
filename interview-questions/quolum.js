@@ -48,7 +48,14 @@ function add(num1) {
     }
 }
 
-add(1)(2)(3)(4)(5)(6)()
+add(1)(2)(3)(4)(5)(6)();
+
+// TO:DO - Addition
+function add(num1) {
+    return function(num2) {
+        return num1 + add(num2);
+    }
+}
 
 
 /******************/
