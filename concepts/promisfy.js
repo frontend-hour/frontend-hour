@@ -1,23 +1,23 @@
 
 // Problem
-// setTimeout(() => {
-//     setTimeout(() => {
-//         setTimeout(() => {
-//             setTimeout(() => {
-//                 setTimeout(() => {
-//                     setTimeout(() => {
-//                         console.log('needed data');
-//                     }, 100);
-//                 }, 100);
-//             }, 100);
-//         }, 100);
-//     }, 100);
-// }, 100);
+setTimeout(() => {
+    setTimeout(() => {
+        setTimeout(() => {
+            setTimeout(() => {
+                setTimeout(() => {
+                    setTimeout(() => {
+                        console.log('needed data');
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 100);
+}, 100);
 
-// Promise
-// .then(cb)
-// .then(cb)
-// .then(cd)
+Promise
+.then(cb)
+.then(cb)
+.then(cd)
 
 // Solution
 
