@@ -1,8 +1,59 @@
-# frontend-hour
+# FRONTEND HOUR
 
-Targetting to revice and recall all the major concepts of JavaScript & AdvancedJS and make them available at one place for further reference.
+Frontend Hour is a concept of one hour learning Everyday. This Repository is a collections of all the major Frontend Concepts.
 
-Below are the series of Concepts being discussed as an when we are available. (Updating concepts after they are being discussed)
+
+## Concepts
+
+1. Array Methods
+2. Async Await
+3. Bind Polyfill
+4. Call, Apply, Bind
+5. Class, Class Extending
+6. Closure
+7. Collections
+8. Currying
+9. Debounce
+10. Destructuring
+11. Event Loop
+12. Extends with/without new
+13. Function Composition
+14. Hoisting
+15. Interators and Generators
+16. Object Oriented Javascript
+17. Promises
+18. Promisfy
+19. Prototype Chain
+20. Recursion
+21. Temporal Dead Zone
+22. Throttle
+23. Value and Reference
+24. Basic Design Paterns
+
+
+## Algorithms
+
+1. Basics
+2. Bubble Sort
+3. Insertion Sort
+4. Merge Sort
+5. Quick Sort
+
+
+##  Problems
+
+1. Array Flat
+2. Array Unique value
+3. Coercion Problem
+4. Get By Path
+5. Longest String
+6. Move Element
+7. Number Pairs
+8. Scope Problem
+9. Shared Numbers
+10. Sleep
+11. Small Tricky Interview questions
+12. This Keyword
 
 ### Function Composition
 
