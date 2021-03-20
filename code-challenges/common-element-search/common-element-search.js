@@ -30,13 +30,13 @@ function commonElementSearchSorted(arr1, arr2) {
     let i = 0;
     let j = 0;
     let commonNumbers = [];
-    while((i < arr1.length) && (j < arr2.length)) {
-        if(arr1[i] === arr2[j]) {
+    while ((i < arr1.length) && (j < arr2.length)) {
+        if (arr1[i] === arr2[j]) {
             commonNumbers.push(arr1[i]);
             i++; j++
-        } else if(arr1[i] < arr2[j]) {
+        } else if (arr1[i] < arr2[j]) {
             i += 1;
-        } else if(arr1[i] > arr2[j]) {
+        } else if (arr1[i] > arr2[j]) {
             j += 1;
         }
     }
@@ -44,3 +44,19 @@ function commonElementSearchSorted(arr1, arr2) {
 }
 
 console.log(commonElementSearchSorted([1, 2, 3, 4, 5, 6, 7].sort(), [4, 2, 9, 1].sort()));
+
+
+// Solution 3 - indexOf Method 
+
+function searchCommonElements(arr1, arr2) {
+    let commonElements = [];
+
+    for (let element of arr1) {
+        if (arr2.indexOf(element) >= 0) {
+            commonElements.push(element);
+        }
+    }
+    return commonElements;
+}
+
+searchCommonElements([1, 2, 3, 4, 5, 6, 7], [4, 2, 9, 1]);
