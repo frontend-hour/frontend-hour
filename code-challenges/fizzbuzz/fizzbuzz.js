@@ -19,4 +19,4 @@ function fizzbuzz(n) {
     }
 }
 
-fizzbuzz(50)
+fizzbuzz(50);
