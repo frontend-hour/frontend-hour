@@ -1,12 +1,13 @@
-// input: arr1: [1, 2, 3, 4, 5, 6, 7], arr2: [4, 2, 9, 1]
-// output: [1, 2, 4] // The elements can be printed in any order
+## Search Common Elements in Both the Arrays in N Square time complexity
 
-// input: arr1: [0, 12, 41, 20], arr2: [9, 3, 1, 5]
-// output: []
+> input: arr1: [1, 2, 3, 4, 5, 6, 7], arr2: [4, 2, 9, 1]
+> output: [1, 2, 4] // The elements can be printed in any order
+
+> input: arr1: [0, 12, 41, 20], arr2: [9, 3, 1, 5]
+> output: []
 
 
-// n sqaure time complexity
-
+```javascript
 function commonElementSearch(arr1, arr2) {
     let arr1Sorted = arr1.sort();
     let arr2Sorted = arr2.sort();
@@ -22,10 +23,12 @@ function commonElementSearch(arr1, arr2) {
         }
     }
 }
-commonElementSearch([1, 2, 3, 4, 5, 6, 7], [4, 2, 9, 1]);
+commonElementSearch([1, 2, 3, 4, 5, 6, 7], [4, 2, 9, 1])
+```
 
-// O(n+m)
-
+## Search Common Elements in Both the Arrays(Sorted) O(n+m) time
+ 
+```javascript
 function commonElementSearchSorted(arr1, arr2) {
     let i = 0;
     let j = 0;
@@ -44,3 +47,4 @@ function commonElementSearchSorted(arr1, arr2) {
 }
 
 console.log(commonElementSearchSorted([1, 2, 3, 4, 5, 6, 7].sort(), [4, 2, 9, 1].sort()));
+```
