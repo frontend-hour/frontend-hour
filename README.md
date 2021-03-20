@@ -1,5 +1,7 @@
 # FRONTEND HOUR
 
+![Frontend Hour](./Frontend-Hour.jpg "Frontend Hour")
+
 Frontend Hour is a concept of one hour learning Everyday. This Repository is a collection of all the major Frontend Concepts.
 
 
