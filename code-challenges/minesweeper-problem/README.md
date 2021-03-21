@@ -1,6 +1,6 @@
 ## The Minesweeper Problem
 
->Given the position of bombs, number of rows and number of columns, prepare the mine field for the minesweeper game.
+> Given the position of bombs, number of rows and number of columns, prepare the mine field for the minesweeper game.
 
 ```
 input:
