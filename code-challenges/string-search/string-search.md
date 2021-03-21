@@ -1,7 +1,8 @@
-// Question -- Given a text, and a pattern, find whether the given pattern exists in the text or not
+## String Search
 
-/*
+> Given a text, and a pattern, find whether the given pattern exists in the text or not
 
+```
 input: text: helloworld, substring: hello
 output: 0 (index of 'h', where the substring starts)
 
@@ -10,19 +11,9 @@ output: -1
 
 input: text: abcrxyzgf, substring: xyz
 output: 4
+```
 
-*/
-// Approach -
-
-// - iterate through the string by removing pattern length from string 
-// - check if pattern first character is equal to iterated string value 
-// - if exists ? make patternExist as Truthy 
-// then iterate in pattern and check if the second character of string equal to patterns second character
-// - if not make patternExist as falsy and break the loop.
-// - if patternExist then return that index of String. else return -1.
-
-
-
+```javascript
 // Brute Force Search
 
 function searchPatternInString(str, pattern) {
@@ -44,8 +35,9 @@ function searchPatternInString(str, pattern) {
 }
 
 
-// Solution 2 - 
+// Solution 2
 
 function stringSearch(str, pattern) {
     return str.indexOf(pattern);
 }
+```

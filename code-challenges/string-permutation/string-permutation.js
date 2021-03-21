@@ -1,16 +1,3 @@
-// Question Find all the permutations of the given string
-// Example:
-// input:
-// 123
-
-// output:
-// 123
-// 132
-// 213
-// 231
-// 312
-// 321
-
 let input = '12345';
 let permutations = [];
 
