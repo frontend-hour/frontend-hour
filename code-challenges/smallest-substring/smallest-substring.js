@@ -1,11 +1,3 @@
-// Question -- Given an array of unique characters and a string, write a program to find the smallest substring of the given string which contains all the characters of the array.
-
-// input:
-//     arr = [a, b, c]
-//     str = "abyuxabyteqaebczt"
-// output: "aebc"
-
-
 function smallestSubstring(array, str) {
     let substring = '';
     let temp = [];
