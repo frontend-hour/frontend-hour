@@ -36,7 +36,7 @@ let x = 20;
 
 let pairs = [];
 for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length; j++) {
+    for (let j = 1; j < arr.length; j++) {
         if (arr[i] + arr[j] === x) {
             let pair = arr[i] > arr[j] ? `${arr[j]},${arr[i]}` : `${arr[i]},${arr[j]}`;
             pairs.indexOf(pair) == -1 && pairs.push(pair);

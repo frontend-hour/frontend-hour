@@ -38,3 +38,19 @@ function arrayPartition(array, partitions) {
 let newArray = arrayPartition([1,2,3,4,5,6,7], 2);
 console.log(newArray);
 ```
+
+##### Solution 2 
+
+```javascript
+
+function arrayChuncking(arr, size) {
+    let allChunks = [];
+
+    while(arr.length > 0) {
+        allChunks.push(arr.splice(0, size));
+    }
+    return allChunks;
+}
+arrayChuncking([1,2,3,4,5,6,7], 2)
+
+```
