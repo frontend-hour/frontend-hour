@@ -14,7 +14,7 @@ process.stdin.on("end", function () {
 });
 
 function main(input) {
-    myArgs+=String(input);
+    // myArgs+=String(input);
     // process.stdout.write(myArgs.split('\n').join(' '));       // Writing output to STDOUT
     console.log(compareLikesAndDislikes(myArgs.split('\n')[0], myArgs.split('\n')[1]));
 }
