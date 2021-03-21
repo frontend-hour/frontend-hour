@@ -66,12 +66,32 @@ console.log(c.first_name);
 let name = 'chaitanyakumar';
 let temp = {};
 
-for(let i = 0; i < name.length; i ++) {
-    if(temp[name[i]]) {
+for (let i = 0; i < name.length; i++) {
+    if (temp[name[i]]) {
         temp[name[i]] += 1;
     } else {
         temp[name[i]] = 1;
     }
 }
 console.log(temp);
+
+
+/** ________________ */
+
+const numbers = {
+    numberA: 5,
+    numberB: 10,
+
+    sum: function () {
+        console.log(this === numbers); // => true
+        function calculate() {
+            // this is window or undefined in strict mode
+            console.log(this === numbers); // => false
+            return this.numberA + this.numberB;
+        }
+        return calculate();
+    }
+};
+
+numbers.sum()
 
