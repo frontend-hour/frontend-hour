@@ -1,13 +1,11 @@
 function printNeighbourCordinates(x, y, array) {
     for (let n = x - 1; n <= x + 1; n++) {
         for (let m = y - 1; m <= y + 1; m++) {
-            console.log(n, m);
-            if (array[n][m] !== -1) {
+            if (n >= 0 && m >= 0 && array[n][m] !== -1) {
                 array[n][m] = array[n][m] + 1;
             }
         }
     }
-    return array;
 }
 
 function buildMine(bombs, rows, columns) {
@@ -20,9 +18,7 @@ function buildMine(bombs, rows, columns) {
     }
     bombs.forEach(element => {
         feild[element[0]][element[1]] = -1;
-        // printNeighbourCordinates(element[0], element[1], feild);
     });
-    console.log(feild);
     bombs.forEach(element => {
         printNeighbourCordinates(element[0], element[1], feild);
     });
