@@ -1,12 +1,3 @@
-// Question – Given two strings, write a program to find the longest string that is a substring of both the given strings.
-
-// Example
-// input: str1 = "abcdefg", str2 = "xyabcz"
-// output: "abc"
-
-// input: str1 = "XYXYXYZ", str2 = "XYZYX"
-// output: "XYZ"
-
 function longestCommonSubstring(str1, str2) {
     let longestStr = '';
     let longestStrArr = [];

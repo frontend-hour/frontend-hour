@@ -1,4 +1,3 @@
-
 function pairSum(arr, num) {
     let pair = [];
     for (let i = 0; i < arr.length; i++) {
@@ -12,6 +11,4 @@ function pairSum(arr, num) {
     return pair;
 }
 
-// pairSum([-1, 4, 5, 5, 6, 7, 8], 10)
-// Array [ 4, 6 ]
-
+pairSum([-1, 4, 5, 5, 6, 7, 8], 10); //[ 4, 6 ]
