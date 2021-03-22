@@ -17,7 +17,6 @@ function generateRandomQuestionOrder(list) {
 console.log(generateRandomQuestionOrder(questions));
 
 // Group times based on date
-
 let input = [
     {
         date: '24 th July',
