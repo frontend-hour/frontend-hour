@@ -58,3 +58,23 @@ function getTimesOfDay(list) {
 }
 
 getTimesOfDay(input);
+
+
+let obj = {
+    name: 'my-name',
+    sayName: function () {
+        return this.name;
+    }
+}
+
+obj.sayName(); // ? my-name
+obj.sayName.call({ name: 'new-name' }); // new-name
+
+let newObj = obj.sayName;
+var name = 'Tim';
+
+newObj(); // Tim
+
+// ------------------------------------------------------------
+let arr = [1, 2, [4, 5], 4, 5, 6, [1, 2, [3, 4, 6, [7, 8, 8]]]];
+
