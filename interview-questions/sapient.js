@@ -5,8 +5,6 @@ function Animal(name) {
 Animal.prototype.walk = function () {
     console.log(this.name + "is Walking");
 }
-
-
 function Dog(name, color) {
     Animal.call(this, name)
     this.color = color;
