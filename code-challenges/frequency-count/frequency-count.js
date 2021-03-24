@@ -17,6 +17,26 @@ function getFrequencyCount(list) {
 
 getFrequencyCount(input1);
 
+
+// Solution 2 // Small change :) 
+
+function getFrequency(input) {
+    var freqObj = {};
+    for (let i = 0; i < input.length; i++) {
+        freqObj[input[i]] ? freqObj[input[i]]++ : freqObj[input[i]] = 1;
+    }
+    console.log(freqObj);
+    let keys = Object.keys(freqObj);
+    for (let i = 0; i < keys.length; i++) {
+        console.log(`${keys[i]} present in ${freqObj[keys[i]]} times`);
+    }
+}
+
+getFrequency([1, 2, 3, 1, 3, 4, 4, 4, 4, 2, 5]);
+
+
+/***************Dont understand why this problem is for ????? */
+
 // Unique Values
 let input2 = [1, 1, 2, 2, 2, 3, 4, 4, 4, 4, 4, 5, 5, 5, 6, 7];
 
@@ -36,8 +56,8 @@ console.log(getUniqueValues(input2));
 
 function checkPowerN(arr1, arr2, N) {
     let flag = true;
-    for(let k of arr1) {
-        if(!arr2.includes(Math.pow(k, N))) {
+    for (let k of arr1) {
+        if (!arr2.includes(Math.pow(k, N))) {
             flag = false;
         }
     }
