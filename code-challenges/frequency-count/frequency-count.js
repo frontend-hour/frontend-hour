@@ -34,9 +34,6 @@ function getFrequency(input) {
 
 getFrequency([1, 2, 3, 1, 3, 4, 4, 4, 4, 2, 5]);
 
-
-/***************Dont understand why this problem is for ????? */
-
 // Unique Values
 let input2 = [1, 1, 2, 2, 2, 3, 4, 4, 4, 4, 4, 5, 5, 5, 6, 7];
 
