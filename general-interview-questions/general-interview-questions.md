@@ -18,6 +18,12 @@
 
 - Cookies , Local Storage, session storage. 
 
+- What is the difference e-commerce website and Point of sale application.
+
+- Design a blog data model
+
+- How do you decide data base schema tables in an e-commerce.
+
 
 
 
