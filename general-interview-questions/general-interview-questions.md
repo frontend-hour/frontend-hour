@@ -10,6 +10,14 @@
 
 - How to design an application? Ex: Twitter.? 
 
+- Disable right click on a webpage ? 
+
+- Disable back Browser back button ?
+
+- When do we use IndexedDB in FrontEnd Development? 
+
+- Cookies , Local Storage, session storage. 
+
 
 
 
