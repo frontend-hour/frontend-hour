@@ -1,0 +1,1 @@
+## FAQ questions on Strings
