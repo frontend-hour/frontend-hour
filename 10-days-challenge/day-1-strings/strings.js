@@ -132,7 +132,7 @@ console.log(findPermutations('abc'));
 // Find the maximum number of times a character repeated
 
 function maxChar(str) {
-    if(!str || typeof str !== 'string') {
+    if (!str || typeof str !== 'string') {
         return 'Invalid input';
     }
     var Obj = {};
@@ -210,3 +210,53 @@ function oneEditAway(str1, str2) {
 function checking(largeStr, smallStr) {
     return largeStr.split('').sort().join().includes(smallStr.split('').sort().join());
 }
+
+// ----------------------------------------
+
+
+// More small examples - 
+
+// A very common programming interview question is that given a string you need to find out the duplicate characters in the string.
+
+// Input: “adsjfdsfsfjsdjfhacabcsbajda”
+
+function duplicateCharacters(str) {
+    let chars = {};
+    for (let i = 0; i <= str.length; i++) {
+        chars[str[i]] ? chars[str[i]]++ : chars[str[i]] = 1;
+    }
+    console.log(chars);
+}
+
+duplicateCharacters('adsjfdsfsfjsdjfhacabcsbajda');
+
+// mirroring a string -----------------------------------------
+
+// Input: "I evol uoy os !hcum"
+// Output: I love you so much!
+
+function reverseString(str) {
+    return str.split(' ').map((item) => item.split('').reverse().join('')).join(' ');
+}
+
+reverseString('Welcome to Quolum interview')
+
+// Sorting an array of strings by length -----------------------------------
+
+
+// We are given an array of strings, we need to sort the array in increasing order of string lengths
+
+// Input : ["You", "are", "beautiful", "looking"]
+// Output : [“You", "are", "looking", "beautiful"]
+
+let arr = ["You", "are", "beautiful", "looking"]
+const asc = arr.sort((a, b) => a.length - b.length);
+// const decsending = arr.sort((a,b) => b.length - a.length);
+console.log(asc);
+  // console.log(decsending);
+
+
+  //--------------------------------------------------------------------
+
+
+
