@@ -35,6 +35,9 @@ Substring Search Algorithm.
 #### 9. 
 Commmon element search in a string. 
 
+#### 10.
+Check for anagram
+
 
 
 For more -

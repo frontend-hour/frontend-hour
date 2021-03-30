@@ -9,7 +9,7 @@ function anagrams(str1, str2) {
     }
 }
 
-// Approach 2
+// More detailed way
 function anagramStrings(str1, str2) {
     if (str1.length !== str2.length) {
         return 'Not valid'

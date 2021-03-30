@@ -58,4 +58,31 @@ console.log(codeBase.sumOfLength(purpose));
 
 // ------------------------------------------------------------------------------
 
-// How to convert long number into abbreviated string in JavaScript ?
+// Given a string, write a program to return a new string with reversed order of characters.
+
+function reverseOrderCharacters(inputString) {
+    if(typeof inputString !== 'string') {
+        return 'Invalid Input';
+    }
+    return inputString.split('').reverse().join('');
+}
+
+console.log(reverseOrderCharacters('This string will be reversed '));
+
+// --------------------------------------------------------------------------------
+
+// Anagram
+
+function anagrams(str1, str2) {
+    if (typeof str1 !== 'string' ||
+        typeof str2 !== 'string' ||
+        str1.length === str2.length) {
+        return false;
+    }
+
+    if (str1.split('').sort().join('') === str2.split('').sort().join('')) {
+        return true;
+    }
+    return false;
+}
+
