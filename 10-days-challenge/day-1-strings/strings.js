@@ -86,6 +86,8 @@ function anagrams(str1, str2) {
     return false;
 }
 
+// --------------------------------------------------------------------------------
+
 // Palindrome
 
 function palindrome(inputString) {
@@ -98,6 +100,8 @@ function palindrome(inputString) {
 }
 
 console.log(palindrome('racecar'));
+
+// --------------------------------------------------------------------------------
 
 // String Permutations
 
@@ -121,4 +125,88 @@ function findPermutations(string) {
     return permutationsArray;
 }
 
-console.log(findPermutations('system'));
+console.log(findPermutations('abc'));
+
+// --------------------------------------------------------------------------------
+
+// Find the maximum number of times a character repeated
+
+function maxChar(str) {
+    if(!str || typeof str !== 'string') {
+        return 'Invalid input';
+    }
+    var Obj = {};
+    var max = 0;
+    var maxChar = '';
+
+    for (var i of str) {
+        if (Obj[i]) {
+            Obj[i]++
+        } else {
+            Obj[i] = 1;
+        }
+    }
+
+    for (var x in Obj) {
+        if (Obj[x] > max) {
+            max = Obj[x];
+            maxChar = x;
+        }
+    }
+    return (maxChar);
+}
+console.log(maxChar('TimesofNewyork'));
+
+//-------------------------------------------------------------------------------------
+
+// string search
+
+// Brute Force Search
+
+function searchPatternInString(str, pattern) {
+    for (let i = 0; i < (str.length - pattern.length) + 1; i++) {
+        if (pattern[0] === str[i]) {
+            let patternExist = true;
+            for (let j = 1; j < pattern.length; j++) {
+                if (pattern[j] !== str[i + j]) {
+                    patternExist = false;
+                    break;
+                }
+            }
+            if (patternExist) {
+                return i;
+            }
+        }
+    }
+    return -1;
+}
+
+// Solution 2
+function stringSearch(str, pattern) {
+    return str.indexOf(pattern);
+}
+
+//-------------------------------------------------------------------------------------
+
+// one edit away
+
+function oneEditAway(str1, str2) {
+    if ((str1.length > str2.length) && (str1.length - str2.length === 1)) {
+        return checking(str1, str2);
+    } else if ((str1.length < str2.length) && (str2.length - str1.length === 1)) {
+        return checking(str2, str1);
+    } else if (str1.length === str2.length) {
+        let count = 0;
+        for (let i = 0; i < str1.length; i++) {
+            if (str1[i] !== str2[i]) {
+                count += 1;
+            }
+        }
+        return count <= 1;
+    }
+    return false;
+}
+
+function checking(largeStr, smallStr) {
+    return largeStr.split('').sort().join().includes(smallStr.split('').sort().join());
+}
