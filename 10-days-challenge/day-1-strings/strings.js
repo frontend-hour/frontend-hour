@@ -61,7 +61,7 @@ console.log(codeBase.sumOfLength(purpose));
 // Given a string, write a program to return a new string with reversed order of characters.
 
 function reverseOrderCharacters(inputString) {
-    if(typeof inputString !== 'string') {
+    if (typeof inputString !== 'string') {
         return 'Invalid Input';
     }
     return inputString.split('').reverse().join('');
@@ -86,3 +86,39 @@ function anagrams(str1, str2) {
     return false;
 }
 
+// Palindrome
+
+function palindrome(inputString) {
+    if (typeof inputString === 'string') {
+        if (inputString.split('').reverse().join('') === inputString) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(palindrome('racecar'));
+
+// String Permutations
+
+function findPermutations(string) {
+    if (!string || typeof string !== "string") {
+        return "Please enter a string";
+    } else if (string.length < 2) {
+        return string;
+    }
+
+    let permutationsArray = [];
+
+    for (let i = 0; i < string.length; i++) {
+        let char = string[i];
+        let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length);
+
+        for (let permutation of findPermutations(remainingChars)) {
+            permutationsArray.push(char + permutation);
+        }
+    }
+    return permutationsArray;
+}
+
+console.log(findPermutations('system'));
