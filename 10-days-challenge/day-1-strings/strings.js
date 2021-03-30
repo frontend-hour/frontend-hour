@@ -286,5 +286,3 @@ function longestCommonSubstring(str1, str2) {
 
 let substr = longestCommonSubstring('XYPXYXYZKREDDY', 'XYZKYXYPREDDY');
 console.log(substr);
-
-

@@ -47,3 +47,8 @@ Refer - https://www.geeksforgeeks.org/tag/javascript-string/
 && 
 
 https://javascript.plainenglish.io/javascript-coding-practice-challenges-strings-f2c9a98e8e5e 
+
+&& 
+
+
+https://www.w3resource.com/javascript-exercises/javascript-string-exercises.php
