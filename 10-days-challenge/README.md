@@ -1,0 +1,11 @@
+- We should target the completion of below items so as to get confidence. 
+
+- DS and Algo Bootcamp - Course
+- arrays, strings, objects - Whatever the way the problem given - you should answer. 
+- Problem solving
+- Know about Authentication - SSO/OAuth/OAuth2/ Passport
+- Authorisation - 
+- Product design / system Design discussion
+- Practicing in Hacker Rank for NodeJS built in terminal type of Questions. 
+- Practice sample coding interviews in w3resource.com
+- Concentrate on Communication of services with Bckend 
