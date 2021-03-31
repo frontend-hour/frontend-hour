@@ -117,11 +117,12 @@ function findPermutations(string) {
     for (let i = 0; i < string.length; i++) {
         let char = string[i];
         let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length);
-
+        console.log(char, remainingChars);
         for (let permutation of findPermutations(remainingChars)) {
             permutationsArray.push(char + permutation);
         }
     }
+    console.log(permutationsArray);
     return permutationsArray;
 }
 
@@ -262,7 +263,6 @@ console.log(asc);
 
 function longestCommonSubstring(str1, str2) {
     let longestStr = '';
-    let longestStrArr = [];
     let str;
     let k = 1;
     for (let i = 0; i < str1.length; i++) {

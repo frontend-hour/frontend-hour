@@ -39,7 +39,7 @@ let input2 = [1, 1, 2, 2, 2, 3, 4, 4, 4, 4, 4, 5, 5, 5, 6, 7];
 
 function getUniqueValues(list) {
     let uniques = [];
-    for (let val of input2) {
+    for (let val of list) {
         if (!uniques.includes(val)) {
             uniques.push(val);
         }
