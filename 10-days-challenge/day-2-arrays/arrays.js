@@ -71,7 +71,6 @@ function isRotation (arr1, arr2) {
     // Check all the other numbers
     for (let i=0; i<len1; i++) {
         if (arr1[(pos+i)%len1] !== arr2[i]) {
-            debugger;
             isRotated = false;
             break;
         }

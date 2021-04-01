@@ -286,3 +286,33 @@ function longestCommonSubstring(str1, str2) {
 
 let substr = longestCommonSubstring('XYPXYXYZKREDDY', 'XYZKYXYPREDDY');
 console.log(substr);
+
+// Write a function to find the longest common prefix string amongst an array of strings.
+// If there is no common prefix, return an empty string "".
+
+// Input: strs = ["flower","flow","flight"]
+// Output: "fl"
+
+function longestCommonPrefix(stringsArray) {
+    if (stringsArray && Array.isArray(stringsArray) && stringsArray.length) {
+       let sortedByLength = stringsArray.sort((a, b) => a.length - b.length);
+       let shortedLengthWord = sortedByLength.shift();
+       let temp = '';
+       for(let i = 0; i < shortedLengthWord.length; i++) {
+           let flag = true;
+           for(let j = 0; j< sortedByLength.length; j ++) {
+                if(sortedByLength[j][i] !== shortedLengthWord[i]) {
+                    flag = false;
+                }
+           }
+           if(flag) {
+               temp = temp + shortedLengthWord[i];
+           } else {
+               return temp;
+           }
+       }
+       return temp;
+    }
+    return "";
+}
+console.log(longestCommonPrefix(["flower", "flow", "flowht"]));
