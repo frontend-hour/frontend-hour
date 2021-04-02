@@ -295,24 +295,56 @@ console.log(substr);
 
 function longestCommonPrefix(stringsArray) {
     if (stringsArray && Array.isArray(stringsArray) && stringsArray.length) {
-       let sortedByLength = stringsArray.sort((a, b) => a.length - b.length);
-       let shortedLengthWord = sortedByLength.shift();
-       let temp = '';
-       for(let i = 0; i < shortedLengthWord.length; i++) {
-           let flag = true;
-           for(let j = 0; j< sortedByLength.length; j ++) {
-                if(sortedByLength[j][i] !== shortedLengthWord[i]) {
+        let sortedByLength = stringsArray.sort((a, b) => a.length - b.length);
+        let shortedLengthWord = sortedByLength.shift();
+        let temp = '';
+        for (let i = 0; i < shortedLengthWord.length; i++) {
+            let flag = true;
+            for (let j = 0; j < sortedByLength.length; j++) {
+                if (sortedByLength[j][i] !== shortedLengthWord[i]) {
                     flag = false;
                 }
-           }
-           if(flag) {
-               temp = temp + shortedLengthWord[i];
-           } else {
-               return temp;
-           }
-       }
-       return temp;
+            }
+            if (flag) {
+                temp = temp + shortedLengthWord[i];
+            } else {
+                return temp;
+            }
+        }
+        return temp;
     }
     return "";
 }
 console.log(longestCommonPrefix(["flower", "flow", "flowht"]));
+
+
+// Question - Write a JavaScript function to chop a string into chunks of a given length 
+
+function strChop(str, size) {
+    let fStr = str.split('');
+    let choppedStr = [];
+    while (fStr.length > 0) {
+        choppedStr.push(fStr.splice(0, size).join(''));
+    }
+    return choppedStr;
+}
+
+// strChop('raghuramireddy', 3);
+//  ["rag", "hur", "ami", "red", "dy"]
+
+
+// Write a JavaScript function to count the occurrence of a substring in a string 
+
+function count(str, substr) {
+    let fStr = str.split(' ');
+    let count = 0;
+    for (let i = 0; i < fStr.length; i++) {
+        if (fStr[i] === substr) {
+            count++
+        }
+    }
+    return count;
+}
+
+// count("the quick brown dog jumps over the lazy dog", 'the') 
+// 2
