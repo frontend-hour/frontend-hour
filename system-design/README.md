@@ -91,3 +91,8 @@
 > This condition states that the system does not fail, regardless of if messages are dropped or delayed between nodes in a system.
 
 > Partition tolerance has become more of a necessity than an option in distributed systems. It is made possible by sufficiently replicating records across combinations of nodes and networks.
+
+## Vertical Scaling Vertical Horizontal Scaling 
+> Horizontal scaling means that you scale by adding more machines into your pool of resources whereas Vertical scaling means that you scale by adding more power (CPU, RAM) to an existing machine.
+
+An easy way to remember this is to think of a machine on a server rack, we add more machines across the horizontal direction and add more resources to a machine in the vertical direction.
