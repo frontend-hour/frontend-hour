@@ -38,6 +38,6 @@ for (item in [1, 2, 3, 4]) {
 
 // for of loop - Only for Array
 
-for (let item in [1, 2, 3, 4]) {
+for (let item of [1, 2, 3, 4]) {
 
 }
