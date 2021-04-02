@@ -348,3 +348,22 @@ function count(str, substr) {
 
 // count("the quick brown dog jumps over the lazy dog", 'the') 
 // 2
+
+
+// Write a JavaScript function to find a word within a string.
+
+function findWord(str, word) {
+    let fStr = str.split(' ');
+    let words = {};
+    for (let i = 0; i < fStr.length; i++) {
+        words[fStr[i]] ? words[fStr[i]]++ : words[fStr[i]] = 1
+    }
+
+    for (let i in words) {
+        if (i === word) {
+            console.log(word + ' present in ' + words[i] + ' times');
+        }
+    }
+}
+
+findWord('The quick fox brown fox', 'fox');
