@@ -23,6 +23,8 @@ user2.printScore = function () {
 
 // Solution
 
+// Create a new instance without new Keyword.
+
 function UserCreater(name, score) {
     let newUser = Object.create(userFunction);
     newUser.name = name;
@@ -44,7 +46,9 @@ const user2 = UserCreater('raghu', 19);
 
 user1.incrementScore();
 
-// Solution using new keyword
+// Solution using new keyword 
+
+// create a new instance without class 
 
 function UserCreater(name, score) {
     this.name = name;
