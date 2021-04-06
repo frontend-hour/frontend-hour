@@ -337,6 +337,9 @@ var longestCommonPrefix = function (strs) {
     return prefix
 }
 
+// refer below link for explaination!
+// https://dev.to/urfan/leetcode-longest-common-prefix-with-javascript-32ca 
+
 
 // Question - Write a JavaScript function to chop a string into chunks of a given length 
 
@@ -387,3 +390,27 @@ function findWord(str, word) {
 }
 
 findWord('The quick fox brown fox', 'fox');
+
+
+// Problems from LeetCode 
+
+// Given two binary strings a and b, return their sum as a binary string.
+
+// Example 1:
+
+// Input: a = "11", b = "1"
+// Output: "100"
+
+// Example 2:
+
+// Input: a = "1010", b = "1011"
+// Output: "10101"
+
+// solution - Below is the solution with BigInt approach. But need to find solution otherwise
+
+var addBinary = function (a, b) {
+    const aBin = `0b${a}`
+    const bBin = `0b${b}`
+    const sum = BigInt(aBin) + BigInt(bBin)
+    return sum.toString(2)
+};
