@@ -414,3 +414,15 @@ var addBinary = function (a, b) {
     const sum = BigInt(aBin) + BigInt(bBin)
     return sum.toString(2)
 };
+
+
+function addBinaryNumbers(a, b) {
+    if (!a.length || !b.length) {
+        return "";
+    }
+    let length = a.length > b.length ? a.length : b.length;
+
+    for (let i = length - 1; i >= 0; i--) {
+
+    }
+}
