@@ -42,5 +42,7 @@ hashMap.addMap('two', 2);
 hashMap.addMap('three', 2);
 console.log(hashMap);
 
+// https://www.educative.io/blog/data-strucutres-hash-table-javascript#what-is
+
 
 
