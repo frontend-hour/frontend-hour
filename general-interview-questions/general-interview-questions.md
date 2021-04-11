@@ -27,8 +27,11 @@
 - HTTP vs. HTTPS: What are the differences? 
 - Why is HTTP not secure? | HTTP vs. HTTPS
 - What is TLS (Transport Layer Security)? 
-[Why is HTTP not secure?](https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/)
+- [Why is HTTP not secure?](https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/)
 
+- [Web application Security checklist - Important](https://www.appsecmonkey.com/blog/web-application-security-checklist) 
+
+- Also Check Tesco interview questions
 
 
 
