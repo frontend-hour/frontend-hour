@@ -1,0 +1,1 @@
+ - Referrence for Example used -  https://medium.com/@thebabscraig/javascript-design-patterns-part-2-the-publisher-subscriber-pattern-8fe07e157213#:~:text=The%20Publisher%2FSubscriber%20pattern%2C%20or,is%20quite%20common%20in%20JavaScript 
