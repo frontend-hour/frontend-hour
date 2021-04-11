@@ -22,7 +22,14 @@
 
 - Design a blog data model
 
-- How do you decide data base schema tables in an e-commerce.
+- How do you decide data base schema tables in an e-commerce. 
+
+- HTTP vs. HTTPS: What are the differences? 
+- Why is HTTP not secure? | HTTP vs. HTTPS
+- What is TLS (Transport Layer Security)? 
+[https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/](Why is HTTP not secure?)
+
+
 
 
 
