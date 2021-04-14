@@ -52,11 +52,26 @@ add(1)(2)(3)(4)(5)(6)();
 
 // TO:DO - Addition
 function add(num1) {
-    return function(num2) {
+    return function (num2) {
         return num1 + add(num2);
     }
 }
 
+
+// Correct solution 
+
+const sum = function (a) {
+    return function (b) {
+        if (b) {
+            return sum(a + b);
+        }
+        return a;
+    }
+};
+
+console.log(sum(1)(2)(3)(4)(5)(6)()); //10
+
+// src - https://www.thatjs.dev/post/sum1234-n-frontend-javascript-interview-question-ae2fa85f8a37d6dbfa116fc128ddf834/
 
 /******************/
 
