@@ -57,8 +57,6 @@ let user4 = createUser('myname', 2);
 // And separated common methods are referenced in the objects.
 // For referencing the commong methods we are using Object.create this will point the newUser Object __proto__ to userFunctionStore
 // But the problem here is every time we are creating newUser object and adding properties.
-// All this work is done simply by using new keyword
-// new keyword when used before calling the createUser this will automate the process of creating newUser Object and adding properties and method reference.
 
 function createUser(name, score) {
     var newUser = Object.create(userFunctionsStore);
@@ -79,6 +77,8 @@ const userFunctionsStore = {
 let user6 = createUser('raghu', 99);
 let user7 = createUser('raghu7', 99);
 
+// All this work is done simply by using new keyword
+// new keyword when used before calling the createUser this will automate the process of creating newUser Object and adding properties and method reference.
 /*- --------------------------------------*/
 
 function createUser(name, score) {
