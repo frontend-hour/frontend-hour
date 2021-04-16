@@ -5,7 +5,7 @@
 3. prototyping chain/without class
 4. Extends/ without class
 5. Call Apply bind
-6. Event Delegaion-> event bubbling
+6. Event Delegation-> event bubbling (https://www.youtube.com/watch?v=aVSf0b1jVKk) (https://www.youtube.com/watch?v=3KJI1WZGDrg&t=62s)
 7. async/ deffer
 8. Event Loop
 9. Hoisting
