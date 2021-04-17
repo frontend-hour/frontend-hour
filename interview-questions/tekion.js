@@ -93,15 +93,7 @@ function Car(model, brand) {
 
 Car.prototype.horn = function () { };
 const myCar = new Car("Model", "Brand");
-MyCar
-
-
-
-
-
-
-
-
+// what is MyCar ?
 
 
 
@@ -113,12 +105,15 @@ MyCar
 
 function longestSubstring(str) {
     var strArr = str.split(‘’); // 
-    Var result = [];
-    For(var x = strArr[i]; x <= strArr.length; x++) {
+    var result = [];
+    for (var x = strArr[i]; x <= strArr.length; x++) {
         if (str) 
 	}
 }
 
+
+// https://gist.github.com/codediodeio/24319b9b17cba57e7a34002228abaaaf
+// https://stackoverflow.com/questions/43002447/longest-substring-non-repeating-characters-javascript/65838104 
 
 
 
