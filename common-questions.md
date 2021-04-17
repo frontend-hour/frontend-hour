@@ -1,13 +1,13 @@
 ## Common Questions
 
 1. Problem Solving
-    a. HackerRank
-    b. Codechef
-    c. CareerCup
-    d. InterviewCake
-    e. Codeforces
-    f. Codility
-    g. Book - Craking the coding interview
+    * HackerRank
+    * Codechef
+    * CareerCup
+    * InterviewCake
+    * Codeforces
+    * Codility
+    * Book - Craking the coding interview
 3. Javascript Tricky Questions(Closure, Event Loop, Hoisting)
     a. https://www.youtube.com/c/akshaymarch7
 5. prototyping chain/without class
