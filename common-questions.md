@@ -14,8 +14,8 @@
 6. Extends/ without class
 7. Call Apply bind
 8. Event Delegation-> event bubbling 
-  * (https://www.youtube.com/watch?v=aVSf0b1jVKk)
-  * (https://www.youtube.com/watch?v=3KJI1WZGDrg&t=62s)
+   * (https://www.youtube.com/watch?v=aVSf0b1jVKk)
+   * (https://www.youtube.com/watch?v=3KJI1WZGDrg&t=62s)
 8. async/ deffer
 9. Event Loop
 10. Hoisting
