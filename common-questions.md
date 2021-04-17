@@ -1,12 +1,21 @@
 ## Common Questions
 
 1. Problem Solving
-2. Javascript Tricky Questions(Closure, Event Loop, Hoisting)
-3. prototyping chain/without class
-4. Extends/ without class
-5. Call Apply bind
-6. Event Delegation-> event bubbling 
-  (https://www.youtube.com/watch?v=aVSf0b1jVKk) (https://www.youtube.com/watch?v=3KJI1WZGDrg&t=62s)
+    a. HackerRank
+    b. Codechef
+    c. CareerCup
+    d. InterviewCake
+    e. Codeforces
+    f. Codility
+    g. Book - Craking the coding interview
+3. Javascript Tricky Questions(Closure, Event Loop, Hoisting)
+    a. https://www.youtube.com/c/akshaymarch7
+5. prototyping chain/without class
+6. Extends/ without class
+7. Call Apply bind
+8. Event Delegation-> event bubbling 
+  a. (https://www.youtube.com/watch?v=aVSf0b1jVKk)
+  b. (https://www.youtube.com/watch?v=3KJI1WZGDrg&t=62s)
 8. async/ deffer
 9. Event Loop
 10. Hoisting
