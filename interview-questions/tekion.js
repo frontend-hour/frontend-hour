@@ -112,6 +112,23 @@ function longestSubstring(str) {
 }
 
 
+function lengthOfLongestSubstring(str) {
+    let substring = '';
+    let max = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        let pos = substring.indexOf(str[i]);
+        if (pos !== -1) {
+            substring = substring.substr(pos + 1);
+        }
+        substring += str[i];
+        max = Math.max(max, substring.length);
+    }
+    return max;
+};
+
+lengthOfLongestSubstring("dvdf"); // 3
+
 // https://gist.github.com/codediodeio/24319b9b17cba57e7a34002228abaaaf
 // https://stackoverflow.com/questions/43002447/longest-substring-non-repeating-characters-javascript/65838104 
 
