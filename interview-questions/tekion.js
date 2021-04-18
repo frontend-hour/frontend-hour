@@ -103,6 +103,7 @@ const myCar = new Car("Model", "Brand");
 // Input: s = "pwwkew" // wke, kew 
 // Output: 3 
 
+// Answer which I tried writing in interview
 function longestSubstring(str) {
     var strArr = str.split(‘’); // 
     var result = [];
@@ -115,11 +116,10 @@ function longestSubstring(str) {
 function lengthOfLongestSubstring(str) {
     let substring = '';
     let max = 0;
-
     for (let i = 0; i < str.length; i++) {
         let pos = substring.indexOf(str[i]);
         if (pos !== -1) {
-            substring = substring.substr(pos + 1);
+            substring = substring.substr(pos + 1); // The substr() method returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards.
         }
         substring += str[i];
         max = Math.max(max, substring.length);
