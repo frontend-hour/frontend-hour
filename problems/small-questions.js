@@ -14,7 +14,7 @@ let func = function () {
         var v = 'var';
     })();
 
-    console.log(v); // var
+    console.log(v); // undefined
     console.log(l); // undefined
 }
 
@@ -57,11 +57,11 @@ Object.defineProperty(profile, 'email', {
 
 console.log(Math.max()); // -Infinity
 
-console.log(Compare({ a: 2, b: 3 },{ a: 2, b: 3, c: 4 },['a', 'b']));
+console.log(Compare({ a: 2, b: 3 }, { a: 2, b: 3, c: 4 }, ['a', 'b']));
 function Compare(obj1, obj2, args) {
-  for (let i = 0; i< args.length; i++) {
-    if(obj1[args[i]] !== obj2[args[i]])
-    return false;
-  }
-  return true;
+    for (let i = 0; i < args.length; i++) {
+        if (obj1[args[i]] !== obj2[args[i]])
+            return false;
+    }
+    return true;
 }

@@ -2,6 +2,18 @@
  * @param {number} n
  * @return {boolean}
  */
+var isPowerOfThree = function(n) {
+    let multiples = 1;
+    while(multiples <= n) {
+        if(multiples === n) {
+            return true;
+        }
+        multiples = multiples * 3;
+    }
+    return false;
+}
+
+// Second Solution
 var isPowerOfThree = function (n) {
     console.log(n.toString(3));
     return n.toString(3).split("").reduce((prev, curr) => parseInt(prev) + parseInt(curr)) == 1;
