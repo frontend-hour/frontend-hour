@@ -21,6 +21,9 @@
 ## Concepts to know
 1. Vertical vs horizontal scaling
 2. CAP theorem
+     * Consistency 
+     * Availability 
+     * Partition Tolerance.
 3. ACID vs BASE
 4. Partitioning/Sharding 
 5. Consistent Hashing
@@ -57,18 +60,21 @@
 32. Multithreading, locks, synchronization, CAS(compare and set)
 
 ## Tools
-1. Cassandra
-2. MongoDB/Couchbase
+1. Cassandra - wide colomn & highly scallable database. Cassandra can provide both eventual and strong consistency. Under the hood cassandra uses consistance hashing to Shard the data.
+2. MongoDB/Couchbase - 
 3. Mysql
 4. Memcached
 5. Redis
-6. Zookeeper
-7. Kafka
+     * Two things to remember when using distributed Caching - 1. They should never be the source of truth & they can only hold limited amount of data which is limited by the amount of memory limited by Host. 
+6. Zookeeper - Scales well for reads, not for writes
+7. Kafka - 
 8. NGINX
-9. HAProxy
+9. HAProxy -
+     * NGINX, HAProxy both are Load balancers and are very efficient.
 8. Solr, Elastic search
 9. Amazon S3
 10. Docker, Kubernetes, Mesos
+     * Docker provides you a container inside which you can develop and run your distributed applications. This containers can run anywhere. Kubernetes, Mesos are the software tools used to manage and co-ordinate these containers. 
 11. Hadoop/Spark and HDFS
 
 ## CAP theorem
