@@ -10,6 +10,7 @@ function zeroBack(nums) {
       nums.push(nums.splice(i, 1)[0]);
     }
   }
+  return nums;
 }
 
 zeroBack([0,1,0,3,12]);

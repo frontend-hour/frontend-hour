@@ -126,4 +126,10 @@ Horizontal sharding is effective when queries tend to return a subset of rows th
 
 ### How does a CDN work?
 
-To minimize the distance between the visitors and your website's server, a CDN stores a cached version of its content in multiple geographical locations (a.k.a., points of presence, or PoPs). ... In essence, CDN puts your content in many places at once, providing superior coverage to your users.
+> To minimize the distance between the visitors and your website's server, a CDN stores a cached version of its content in multiple geographical locations (a.k.a., points of presence, or PoPs). ... In essence, CDN puts your content in many places at once, providing superior coverage to your users.
+
+## Load Balancer 
+
+> A load balancer's job is to sit between the client and server (but there are other places it can be inserted) and work out how to distribute incoming request loads across multiple servers, so that the end user (client's) experience is consistently fast, smooth and reliable.
+
+> So load balancers are like traffic managers who direct traffic.  And they do this to maintain availability and throughput.
