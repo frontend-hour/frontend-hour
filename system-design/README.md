@@ -133,3 +133,10 @@ Horizontal sharding is effective when queries tend to return a subset of rows th
 > A load balancer's job is to sit between the client and server (but there are other places it can be inserted) and work out how to distribute incoming request loads across multiple servers, so that the end user (client's) experience is consistently fast, smooth and reliable.
 
 > So load balancers are like traffic managers who direct traffic.  And they do this to maintain availability and throughput.
+
+
+### Useful Resources 
+
+- https://betterprogramming.pub/frontend-architecture-for-scale-c4acc44a214e 
+
+- https://www.youtube.com/watch?v=Gg318hR5JY0 
