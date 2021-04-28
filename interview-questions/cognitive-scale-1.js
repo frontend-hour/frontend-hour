@@ -98,8 +98,8 @@ const peopleNames = ['Name 1', 'Name 2' ...];
 async function  getDetials(peoples) {
   if(Array.isArray(peoples)) {
     for(let i = 0; i < peoples.length; i++) {
-      let result = await fetch(`https://swapi.dev/api/planets/${peoples[i]}/`);
-      result.then((response) => console.log(response));
+      let result = await fetch(`https://swapi.dev/api/planets/${peoples[i]}/`).then((response) => response.json())
+  .then((json) => console.log(json));
       console.log(result);
     }
   }
