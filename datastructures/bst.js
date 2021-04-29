@@ -8,11 +8,17 @@ class BinaryTree {
   
   insert(value) {
     if (value <= this.value) {
-        if (!this.left) this.left = new BinaryTree(value);
-        else this.left.insert(value);
+        if (!this.left) {
+          this.left = new BinaryTree(value);
+        } else {
+          this.left.insert(value);
+        }
     } else {
-        if (!this.right) this.right = new BinaryTree(value);
-        else this.right.insert(value);
+        if (!this.right) {
+          this.right = new BinaryTree(value);
+        } else {
+          this.right.insert(value);
+        }
     }
   }
   
