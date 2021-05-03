@@ -8,6 +8,9 @@
 6. Containers & Overview
 7. DS - Level 2 
 
+- To think on a Node module to build and Publish - Think think . . . 
+- Getting contributors once finalized.
+
 
 ##### Todo for RAGHU
 
