@@ -17,3 +17,26 @@ Explanation: As shown in the figure above, node 2 is connected to every other no
 Input: edges = [[1,2],[5,1],[1,3],[1,4]]
 Output: 1
 ```
+
+```javascript
+var findCenter = function(edges) {
+    let connection = {};
+    for(let i = 0; i < edges.length; i++) {
+        for(let j = 0; j < edges[i].length; j++) {
+            console.log(edges[i][j]);
+            if(connection.hasOwnProperty(edges[i][j])) {
+                connection[edges[i][j]] += 1;
+            } else {
+                connection[edges[i][j]] = 1;
+            }
+        }
+    }
+    let result;
+    Object.keys(connection).forEach((key) => {
+        if(connection[key] === edges.length) {
+            result = key;
+        }
+    });
+    return result;
+};
+```
