@@ -7,7 +7,7 @@
 | 3 | [add-strings](./add-strings/)| **add-strings** |
 | 4 | [anagram](./anagram/)| **anagram** |
 | 5 | [array-circular-rotation](./array-circular-rotation/)| **array-circular-rotation** |
-| 7 | [array-partition](.//)| **** |
+| 7 | [array-partition](.//)| **array-partition** |
 | 8 | [](.array-partition/array-partition/)| **array-partition** |
 | 9 | [array-rotation](.array-rotation/array-rotation/)| **array-rotation** |
 | 10 | [binary-sum](.binary-sum/binary-sum/)| **binary-sum** |
