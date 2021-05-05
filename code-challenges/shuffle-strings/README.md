@@ -5,6 +5,8 @@
 > The string s will be shuffled such that the character at the ith position moves to indices[i] in the shuffled string.
 
 > Return the shuffled string.
+
+
 ![image](https://user-images.githubusercontent.com/11692119/117171102-377eb200-ade8-11eb-9132-76f354f3c0e9.png)
 
 ```
