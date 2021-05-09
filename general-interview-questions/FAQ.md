@@ -102,7 +102,7 @@ Object.keys(obj2).forEach((key) => {
 console.log(k);
 ```
 
-> 4 async await
+> 4 async & await
 
 ```javascript
 const peoples = [1,2,3,4,5];
@@ -139,11 +139,10 @@ function duplicatesCount(str) {
             obj[str[i]] = 1;
         }
     }
-    // return obj;
+
     let str1 = '';
     Object.keys(obj).forEach((key) => {
         str1 += `${key}${obj[key]}`
-        // console.log('key', key);
     })
     console.log(obj, str1);
     return str1;
@@ -152,11 +151,11 @@ function duplicatesCount(str) {
 console.log(duplicatesCount('wwwwaaadexxxxxx'))
 ```
 
-> 6. URLify Given a string, replace all spaces with the characters ‘% 20’.
+> 6. URLify Given a string, replace all spaces with the characters '% 20'.
 
 ```
-const str = ‘ab cd ef ‘;
-output -> ‘ab%20cd%20ef’
+const str = 'ab cd ef ';
+output -> 'ab%20cd%20ef'
 ```
 
 ```javascript
@@ -180,6 +179,7 @@ console.log(URLify('ab cd ef '));
 > 8. How can I catch error using Async and Await ?
 
 > 9. componentwillreceiveprops - Hooks equivalent???
+
 > 10. Explain CSS object Modal - How it co-ordinates or interacts with HTML DOM?
 
 > 11. Difference between - display:"none" / visibility:"hidden"
@@ -280,7 +280,7 @@ for(let i = 0; i < arr2.length; i++) {
 1. Write a function to perform in-place reversal of words in JS and execute it as:
 
 ```
-console.log(reverseWords(“Welcome to Quolum Interview!”));
+console.log(reverseWords("Welcome to Quolum Interview!"));
 output: - emocleW ot mulouQ!weivretnI
 ```
 
@@ -364,7 +364,7 @@ checkEquality(676767, 676767);
 - Blog database design 
 - Self relations tables
 
-> 4. Square center align
+> 4. How to center align a Square using CSS?
 
 ```css
 .square {
@@ -417,6 +417,8 @@ newFunc.bind(personObj)(); //  Abhishek Agarwal
 ```
 
 > 4. Debounce
+- The main difference between Throttle and Debounce is that throttling executes the function at a regular interval, while debouncing executes the function only after some cooling period. 
+- Both throttling and debouncing can be implemented with the help of the setTimeout function.
 
 ```js
 function debounce(fn, ms) {
@@ -439,7 +441,7 @@ function printName(name) {
 
 const debouncePrintName = debounce(printName, 1000);
 
-//So, Debouncing enforces that a function not be called again until a certain amount of time has passed without it being called. As in “execute this function only if 1000 milliseconds have passed without it being called.”
+// So, Debouncing enforces that a function not be called again until a certain amount of time has passed without it being called. As in "execute this function only if 1000 milliseconds have passed without it being called."
 
 function keyUpEvent(e) {
     debouncePrintName(e.target.value)
@@ -552,13 +554,13 @@ function middleware(sampleResponse) {
     }
 }
 ```
-### Discussion Transcript
+#### Discussion & Transcript
 - How do you Invalidating Cache
 - On what Criteria Cache will be cleared.
 - I will add time stamp when storing in store
 - sorted based on time stamp in store
-- Based on time ciriteria of data, I will expiry flag to data
-And check the falag with time
+- Based on time ciriteria of data, I will set expiry flag to data
+And check the flag with time
 Actual time
 When accessed the data in store
 - There has to be timer that cleans based expiry
