@@ -67,3 +67,6 @@ promise1.then(message => {
 
 // componentwillreceiveprops - Hooks equivalent???
 
+// Explain CSS object Modal - How it co-ordinates or interacts with HTML DOM?
+
+// Difference between - display:"none" / visibility:"hidden"
