@@ -102,7 +102,7 @@ Object.keys(obj2).forEach((key) => {
 console.log(k);
 ```
 
-> 4 async await
+> 4 async & await
 
 ```javascript
 const peoples = [1,2,3,4,5];
@@ -139,11 +139,10 @@ function duplicatesCount(str) {
             obj[str[i]] = 1;
         }
     }
-    // return obj;
+
     let str1 = '';
     Object.keys(obj).forEach((key) => {
         str1 += `${key}${obj[key]}`
-        // console.log('key', key);
     })
     console.log(obj, str1);
     return str1;
@@ -152,11 +151,11 @@ function duplicatesCount(str) {
 console.log(duplicatesCount('wwwwaaadexxxxxx'))
 ```
 
-> 6. URLify Given a string, replace all spaces with the characters ‘% 20’.
+> 6. URLify Given a string, replace all spaces with the characters '% 20'.
 
 ```
-const str = ‘ab cd ef ‘;
-output -> ‘ab%20cd%20ef’
+const str = 'ab cd ef ';
+output -> 'ab%20cd%20ef'
 ```
 
 ```javascript
@@ -180,6 +179,7 @@ console.log(URLify('ab cd ef '));
 > 8. How can I catch error using Async and Await ?
 
 > 9. componentwillreceiveprops - Hooks equivalent???
+
 > 10. Explain CSS object Modal - How it co-ordinates or interacts with HTML DOM?
 
 > 11. Difference between - display:"none" / visibility:"hidden"
@@ -280,7 +280,7 @@ for(let i = 0; i < arr2.length; i++) {
 1. Write a function to perform in-place reversal of words in JS and execute it as:
 
 ```
-console.log(reverseWords(“Welcome to Quolum Interview!”));
+console.log(reverseWords("Welcome to Quolum Interview!"));
 output: - emocleW ot mulouQ!weivretnI
 ```
 
@@ -364,7 +364,7 @@ checkEquality(676767, 676767);
 - Blog database design 
 - Self relations tables
 
-> 4. Square center align
+> 4. How to center align a Square using CSS?
 
 ```css
 .square {
@@ -417,6 +417,8 @@ newFunc.bind(personObj)(); //  Abhishek Agarwal
 ```
 
 > 4. Debounce
+- The main difference between Throttle and Debounce is that throttling executes the function at a regular interval, while debouncing executes the function only after some cooling period. 
+- Both throttling and debouncing can be implemented with the help of the setTimeout function.
 
 ```js
 function debounce(fn, ms) {
@@ -439,7 +441,7 @@ function printName(name) {
 
 const debouncePrintName = debounce(printName, 1000);
 
-//So, Debouncing enforces that a function not be called again until a certain amount of time has passed without it being called. As in “execute this function only if 1000 milliseconds have passed without it being called.”
+// So, Debouncing enforces that a function not be called again until a certain amount of time has passed without it being called. As in "execute this function only if 1000 milliseconds have passed without it being called."
 
 function keyUpEvent(e) {
     debouncePrintName(e.target.value)
@@ -552,13 +554,13 @@ function middleware(sampleResponse) {
     }
 }
 ```
-### Discussion Transcript
+#### Discussion & Transcript
 - How do you Invalidating Cache
 - On what Criteria Cache will be cleared.
 - I will add time stamp when storing in store
 - sorted based on time stamp in store
-- Based on time ciriteria of data, I will expiry flag to data
-And check the falag with time
+- Based on time ciriteria of data, I will set expiry flag to data
+And check the flag with time
 Actual time
 When accessed the data in store
 - There has to be timer that cleans based expiry
@@ -975,3 +977,101 @@ INVALID INPUT
 
 > 2. Number pairs
 
+```js
+// Programming challenge description:
+// You are given a sorted array of positive integers and a number X.
+// Print out all pairs of numbers whose sum is equal to X. 
+// Print out only unique pairs and the pairs should be in ascending order
+// Input:
+// Your program should read lines of text from standard input.
+// Each line will contain a comma separated list of sorted numbers,
+// followed by a semicolon, followed by the integer X.
+// Output:
+// For each line of input, print to standard output the pairs of numbers that sum to X. Print the pairs in ascending order (the first number of each pair should be less than or equal to the second number). If no pair exists that sums to X, print the string NULL.
+// Test 1
+// Test Input
+// Test 1 Input
+// 1,2,3,4,6;5
+// Expected Output
+// Test 1 Input
+// 1,4;2,3
+// Test 2
+// Test Input
+// Test 2 Input
+// 2,4,5,6,9,11,15;20
+// Expected Output
+// Test 2 Input
+// 5,15;9,11
+// Test 3
+// Test Input
+// Test 3 Input
+// 1,2,3,4;50
+// Expected Output
+// Test 3 Input
+// NULL
+
+let arr = [2, 4, 5, 6, 9, 11, 15];
+let x = 20;
+
+let pairs = [];
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 1; j < arr.length; j++) {
+        if (arr[i] + arr[j] === x) {
+            let pair = arr[i] > arr[j] ? `${arr[j]},${arr[i]}` : `${arr[i]},${arr[j]}`;
+            pairs.indexOf(pair) == -1 && pairs.push(pair);
+        }
+    }
+}
+
+console.log(pairs);
+
+// Other solution 
+function numberPairs(str) {
+    let formattedStr = str.split(';');
+    let arr = formattedStr[0];
+    let x = formattedStr[formattedStr.length - 1];
+
+    let pairs = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 1; j < arr.length; j++) {
+            if (arr[i] + arr[j] === x) {
+                let pair = arr[i] > arr[j] ? `${arr[j]},${arr[i]}` : `${arr[i]},${arr[j]}`;
+                pairs.indexOf(pair) == -1 && pairs.push(pair);
+            }
+        }
+    }
+}
+
+numberPairs('2,4,5,6,9,11,15;20');
+
+// Added another type of Asking the same question -
+
+// Pair Sum N
+// Question – Given a sorted array of integers and a number num, write a function pairSumN which returns the first pair of integers whose sum equals to the given number num, return an empty array if the pair does not exist
+
+// Example
+
+// input: arr = [-3, -2, -1, 0, 1, 2, 3], num = 0
+// output: [-3, 3]
+
+// input: arr = [-1, 4, 5, 5, 6, 7, 8], num = 10
+// output: [4, 6]
+
+// input; arr = [1, 2, 3, 4, 5, 6], num = 20
+// output: []
+
+function pairSumNumbers(array) {
+    var pairNum = [];
+    var num = 10
+    for (var i = 0; i < array.length; i++) {
+        for (var j = i + 1; j < array.length; j++) {
+            if (array[i] + array[j] === num) {
+                pairNum.push(array[i], array[j])
+                return pairNum;
+            }
+        }
+    }
+    return pairNum;
+}
+
+```
