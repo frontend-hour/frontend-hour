@@ -9,6 +9,9 @@
 - https://github.com/sudheerj/reactjs-interview-questions
 
 
+#### Good Example of REACTJS Toggle button 
+- https://www.sitepoint.com/react-toggle-switch-reusable-component/
+
 
 #### CODE CHALLENGES 
 
