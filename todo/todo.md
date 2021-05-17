@@ -18,3 +18,4 @@
 - Data Structures
 - ReactJS pocs
 - To start a react project which covers all the concepts of Reactjs
+- Redux-Toolkit
