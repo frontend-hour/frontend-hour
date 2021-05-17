@@ -2,8 +2,11 @@
 /*
 In ECMAScript 6, accessing a let or const variable before its declaration (within its scope) causes a ReferenceError . The time span when that happens, between the creation of a variable's binding and its declaration, is called the temporal dead zone.
 */
+console.log(g);
+console.log(x);
 
 let x = 2;
+var g = 9;
 function b(y = x, x) {
     x = 3;
     console.log(y);
