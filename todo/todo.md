@@ -22,4 +22,4 @@
 
 
 ### PREPARATION NOT GOING WELL. Worried.
-
+#### READ AGAIN...
