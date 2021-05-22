@@ -633,7 +633,7 @@ let sqaureBind = sqaure.getArea.bind(sqaure2);
 > 2. What is ClickJacking ? 
 - https://www.appsecmonkey.com/blog/clickjacking 
 
-> 3. Why Git rebase over Git merge. 
+> 3. Why Git rebase over Git merge? Difference between them and which is best? 
 
 > 4. React Virtual dom? What alogrithm it uses.
 
