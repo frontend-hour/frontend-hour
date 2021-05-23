@@ -41,8 +41,9 @@
 - Restfull services are the one that implements that pattern. 
 - When a Restfull API is called, the server will transfer to the client a representation of the state of the requested resource. 
 
+# OPEN Questions never going away from my mind - 
 
-
-
+1. How the reply to reply algorithm working for Facebook and Twitter.? 
+2. How to optimise the solution for any given problem? I think the solution is - Practice practice, more practice will give us the most optimised solution.
 
 
