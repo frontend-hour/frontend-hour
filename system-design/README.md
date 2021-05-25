@@ -155,3 +155,4 @@ Horizontal sharding is effective when queries tend to return a subset of rows th
 - https://www.youtube.com/watch?v=Gg318hR5JY0 
 
 - https://www.freecodecamp.org/news/systems-design-for-interviews - Great article - System Design Interview Questions – Concepts You Should Know 
+## Eventual vs Strong Consistency in Distributed Databases
