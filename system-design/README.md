@@ -156,3 +156,18 @@ Horizontal sharding is effective when queries tend to return a subset of rows th
 
 - https://www.freecodecamp.org/news/systems-design-for-interviews - Great article - System Design Interview Questions – Concepts You Should Know 
 ## Eventual vs Strong Consistency in Distributed Databases
+
+### Eventual Consistency
+> Whenever we use multiple replicas of a database to store data and let’s say a write request comes to one of the replicas. In such a situation, Databases had to discover a strategy to make this write request at one replica reach other replicas so that they all could also write data of the request and become consistent.
+
+> Consistency here means that a read request for an entity made to any of the nodes of the database should return the same data.
+> Eventual consistency makes sure that data of each node of the database gets consistent eventually. Time taken by the nodes of the database to get consistent may or may not be defined.
+
+> Data getting consistent eventually means it will take time for updates to reach other replicas. So what?
+> This implies that if someone reads from a replica which is not updated yet (since replicas are updated eventually) then it may return stale data.
+
+### Strong Consistency
+> It says data will get passed on to all the replicas as soon as a write request comes to one of the replicas of the database.
+> But during the time these replicas are being updated with new data, response to any subsequent read/write requests by any of the replicas will get delayed as all replicas are busy in keeping each other consistent.
+
+> As soon as they become consistent, they start to take care of the requests that have come at their door.
