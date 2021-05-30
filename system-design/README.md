@@ -171,3 +171,6 @@ Horizontal sharding is effective when queries tend to return a subset of rows th
 > But during the time these replicas are being updated with new data, response to any subsequent read/write requests by any of the replicas will get delayed as all replicas are busy in keeping each other consistent.
 
 > As soon as they become consistent, they start to take care of the requests that have come at their door.
+
+## RelationalDB vs NoSQL
+> https://www.google.com/amp/s/www.geeksforgeeks.org/difference-between-sql-and-nosql/amp/
