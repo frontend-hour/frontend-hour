@@ -33,6 +33,7 @@ class BinaryTree {
     }
   }
   // DFT - Depth first traversal 
+  // Iterative method
   depthFirstTraversal(iteratorFunc, order) {
     if (order === 'pre-order') iteratorFunc(this.value);
     if (this.left) this.left.depthFirstTraversal(iteratorFunc, order);
@@ -41,6 +42,7 @@ class BinaryTree {
     if (order === 'post-order') iteratorFunc(this.value);
   }
   // BFT - Breadth First Traversal
+  // Interative method
   breadthFirstTraversal(iteratorFunc) {
     var Queue = [this];
     while (Queue.length) {
