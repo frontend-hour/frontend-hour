@@ -4,18 +4,21 @@
 
 > You may return the answer in any order.
 
+
 ```
 Example 1:
 
 Input: ["bella","label","roller"]
 Output: ["e","l","l"]
 ```
+
 ```
 Example 2:
 
 Input: ["cool","lock","cook"]
 Output: ["c","o"]
- ``
+```
+
 ```
 Note:
 
