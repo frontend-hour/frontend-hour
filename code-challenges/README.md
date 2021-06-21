@@ -31,7 +31,7 @@
 | 28 | [matrix-rotation](./matrix-rotation/)| **matrix-rotation** |
 | 29 | [max-characters-string](./max-characters-string/)| **max-characters-string** |
 | 30 | [max-ice-cream-bars](./max-ice-cream-bars/)| **max-ice-cream-bars** |
-| 31 | [](.//)| **** |
+| 31 | [maximum-product-of-two-elements-in-an-array](./maximum-product-of-two-elements-in-an-array/)| **maximum-product-of-two-elements-in-an-array** |
 | 32 | [](.//)| **** |
 | 33 | [](.//)| **** |
 | 34 | [](.//)| **** |
