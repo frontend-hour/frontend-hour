@@ -26,3 +26,4 @@ Constraints:
 0 <= digits.length <= 4
 digits[i] is a digit in the range ['2', '9'].
 ```
+![image](https://user-images.githubusercontent.com/11692119/153698722-0f48d966-086c-4b9a-853a-96f80de39788.png)
