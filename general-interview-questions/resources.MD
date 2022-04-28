@@ -50,3 +50,6 @@ if(a == 1 && a == 2 && a == 3) {
   console.log('Hello World!');
 }
 ```
+
+### js interview questions
+- https://javascriptinterviewquestions.com/2020/04/add123-in-javascript-currying-interview.html
