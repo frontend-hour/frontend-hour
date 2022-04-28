@@ -36,3 +36,17 @@
 - https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw - Tech lead YT Channel 
 - https://www.youtube.com/watch?v=j_D2afv1Juk - Ultimate guide for Tier 3, service based company to Product based company 🔥 Journey | Motivation 
 - https://imanuelgittens.gitbooks.io/a-javascript-journey-through-leetcode/content/question-seven.html - Leetcode Answers Github book
+
+
+```js
+const a = {
+  i: 1,
+  toString: function () {
+    return a.i++;
+  }
+}
+
+if(a == 1 && a == 2 && a == 3) {
+  console.log('Hello World!');
+}
+```
