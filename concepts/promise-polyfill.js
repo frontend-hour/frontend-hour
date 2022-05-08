@@ -1,5 +1,3 @@
-import "./styles.css";
-
 class myPromise {
   constructor(func) {
     this.value;
