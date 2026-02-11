@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend Hour</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Hour | Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-</body>
-<script src="./concepts/temporal-dead-zone.js"></script>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo-area">
+                <h1>Frontend Hour</h1>
+                <p>Learning Hub</p>
+            </div>
+            <nav id="nav-menu" class="nav-menu">
+                <!-- Content injected by app.js -->
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <header class="top-bar">
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+                <div class="breadcrumbs" id="breadcrumbs">Home</div>
+            </header>
+            
+            <div id="content-viewer" class="content-viewer markdown-body">
+                <div class="welcome-screen">
+                    <h2>Welcome to Frontend Hour</h2>
+                    <p>Select a topic from the sidebar to start learning.</p>
+                </div>
+            </div>
+        </main>
+    </div>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="app.js"></script>
+</body>
 </html>

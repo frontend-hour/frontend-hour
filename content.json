@@ -1,0 +1,674 @@
+{
+  "dsa": {
+    "algorithms": {
+      "README.md": {
+        "path": "dsa/algorithms/README.md",
+        "title": "README"
+      }
+    },
+    "challenges": {
+      "README.md": {
+        "path": "dsa/challenges/README.md",
+        "title": "README"
+      },
+      "add-numbers-linked-list": {
+        "README.md": {
+          "path": "dsa/challenges/add-numbers-linked-list/README.md",
+          "title": "README"
+        }
+      },
+      "add-one": {
+        "README.md": {
+          "path": "dsa/challenges/add-one/README.md",
+          "title": "README"
+        }
+      },
+      "add-strings": {
+        "README.md": {
+          "path": "dsa/challenges/add-strings/README.md",
+          "title": "README"
+        }
+      },
+      "anagram": {
+        "README.md": {
+          "path": "dsa/challenges/anagram/README.md",
+          "title": "README"
+        }
+      },
+      "array-in-given-order": {
+        "README.md": {
+          "path": "dsa/challenges/array-in-given-order/README.md",
+          "title": "README"
+        }
+      },
+      "array-partition": {
+        "README.md": {
+          "path": "dsa/challenges/array-partition/README.md",
+          "title": "README"
+        }
+      },
+      "array-rotation": {
+        "README.md": {
+          "path": "dsa/challenges/array-rotation/README.md",
+          "title": "README"
+        }
+      },
+      "balanced-string": {
+        "README.md": {
+          "path": "dsa/challenges/balanced-string/README.md",
+          "title": "README"
+        }
+      },
+      "binary-sum": {
+        "README.md": {
+          "path": "dsa/challenges/binary-sum/README.md",
+          "title": "README"
+        }
+      },
+      "common-characters": {
+        "README.md": {
+          "path": "dsa/challenges/common-characters/README.md",
+          "title": "README"
+        }
+      },
+      "common-element-search": {
+        "README.md": {
+          "path": "dsa/challenges/common-element-search/README.md",
+          "title": "README"
+        }
+      },
+      "day-1-strings": {
+        "README.md": {
+          "path": "dsa/challenges/day-1-strings/README.md",
+          "title": "README"
+        }
+      },
+      "day-2-arrays": {
+        "README.md": {
+          "path": "dsa/challenges/day-2-arrays/README.md",
+          "title": "README"
+        }
+      },
+      "defang-ip": {
+        "README.md": {
+          "path": "dsa/challenges/defang-ip/README.md",
+          "title": "README"
+        }
+      },
+      "depth-binary-tree": {
+        "README.md": {
+          "path": "dsa/challenges/depth-binary-tree/README.md",
+          "title": "README"
+        }
+      },
+      "divisor-game": {
+        "README.md": {
+          "path": "dsa/challenges/divisor-game/README.md",
+          "title": "README"
+        }
+      },
+      "factorial": {
+        "README.md": {
+          "path": "dsa/challenges/factorial/README.md",
+          "title": "README"
+        }
+      },
+      "fibonacci": {
+        "README.md": {
+          "path": "dsa/challenges/fibonacci/README.md",
+          "title": "README"
+        }
+      },
+      "find-star-graph-center": {
+        "README.md": {
+          "path": "dsa/challenges/find-star-graph-center/README.md",
+          "title": "README"
+        }
+      },
+      "fizzbuzz": {
+        "README.md": {
+          "path": "dsa/challenges/fizzbuzz/README.md",
+          "title": "README"
+        }
+      },
+      "frequency-count": {
+        "README.md": {
+          "path": "dsa/challenges/frequency-count/README.md",
+          "title": "README"
+        }
+      },
+      "goal-parser": {
+        "README.md": {
+          "path": "dsa/challenges/goal-parser/README.md",
+          "title": "README"
+        }
+      },
+      "group-anagram": {
+        "README.md": {
+          "path": "dsa/challenges/group-anagram/README.md",
+          "title": "Group Anagrams"
+        }
+      },
+      "happy-number": {
+        "README.md": {
+          "path": "dsa/challenges/happy-number/README.md",
+          "title": "README"
+        }
+      },
+      "homework-at-given-time": {
+        "README.md": {
+          "path": "dsa/challenges/homework-at-given-time/README.md",
+          "title": "README"
+        }
+      },
+      "intersection-of-linked-list": {
+        "README.md": {
+          "path": "dsa/challenges/intersection-of-linked-list/README.md",
+          "title": "README"
+        }
+      },
+      "keyboard-rows": {
+        "README.md": {
+          "path": "dsa/challenges/keyboard-rows/README.md",
+          "title": "README"
+        }
+      },
+      "least-disruptive-substring": {
+        "README.md": {
+          "path": "dsa/challenges/least-disruptive-substring/README.md",
+          "title": "README"
+        }
+      },
+      "letter-combinations-of-phone-number": {
+        "README.md": {
+          "path": "dsa/challenges/letter-combinations-of-phone-number/README.md",
+          "title": "README"
+        }
+      },
+      "longest-common-substring": {
+        "README.md": {
+          "path": "dsa/challenges/longest-common-substring/README.md",
+          "title": "README"
+        }
+      },
+      "lucky-integer-in-array": {
+        "README.md": {
+          "path": "dsa/challenges/lucky-integer-in-array/README.md",
+          "title": "README"
+        }
+      },
+      "lucky-number-in-matrix": {
+        "README.md": {
+          "path": "dsa/challenges/lucky-number-in-matrix/README.md",
+          "title": "README"
+        }
+      },
+      "majority-element": {
+        "README.md": {
+          "path": "dsa/challenges/majority-element/README.md",
+          "title": "README"
+        }
+      },
+      "matching-rule": {
+        "README.md": {
+          "path": "dsa/challenges/matching-rule/README.md",
+          "title": "README"
+        }
+      },
+      "matrix-rotation": {
+        "README.md": {
+          "path": "dsa/challenges/matrix-rotation/README.md",
+          "title": "README"
+        }
+      },
+      "max-characters-string": {
+        "README.md": {
+          "path": "dsa/challenges/max-characters-string/README.md",
+          "title": "README"
+        }
+      },
+      "max-ice-cream-bars": {
+        "README.md": {
+          "path": "dsa/challenges/max-ice-cream-bars/README.md",
+          "title": "README"
+        }
+      },
+      "maximum-product-of-two-elements-in-an-array": {
+        "README.md": {
+          "path": "dsa/challenges/maximum-product-of-two-elements-in-an-array/README.md",
+          "title": "README"
+        }
+      },
+      "maximum-sub-array": {
+        "README.md": {
+          "path": "dsa/challenges/maximum-sub-array/README.md",
+          "title": "README"
+        }
+      },
+      "maximum-sum-of-n": {
+        "README.md": {
+          "path": "dsa/challenges/maximum-sum-of-n/README.md",
+          "title": "README"
+        }
+      },
+      "median-of-arrays": {
+        "README.md": {
+          "path": "dsa/challenges/median-of-arrays/README.md",
+          "title": "README"
+        }
+      },
+      "merge-between-linked-lists": {
+        "README.md": {
+          "path": "dsa/challenges/merge-between-linked-lists/README.md",
+          "title": "README"
+        }
+      },
+      "minesweeper-problem": {
+        "README.md": {
+          "path": "dsa/challenges/minesweeper-problem/README.md",
+          "title": "README"
+        }
+      },
+      "move-zeros": {
+        "README.md": {
+          "path": "dsa/challenges/move-zeros/README.md",
+          "title": "README"
+        }
+      },
+      "n-unique-integers-add-to-zero": {
+        "README.md": {
+          "path": "dsa/challenges/n-unique-integers-add-to-zero/README.md",
+          "title": "README"
+        }
+      },
+      "negative-number-count-d2-matrix": {
+        "README.md": {
+          "path": "dsa/challenges/negative-number-count-d2-matrix/README.md",
+          "title": "README"
+        }
+      },
+      "non-overlapping-subarray-sum": {
+        "README.md": {
+          "path": "dsa/challenges/non-overlapping-subarray-sum/README.md",
+          "title": "README"
+        }
+      },
+      "numbers-less-than-current-number": {
+        "README.md": {
+          "path": "dsa/challenges/numbers-less-than-current-number/README.md",
+          "title": "README"
+        }
+      },
+      "one-edit-away": {
+        "README.md": {
+          "path": "dsa/challenges/one-edit-away/README.md",
+          "title": "README"
+        }
+      },
+      "pair-sum-n": {
+        "README.md": {
+          "path": "dsa/challenges/pair-sum-n/README.md",
+          "title": "README"
+        }
+      },
+      "palindromic-substrings": {
+        "README.md": {
+          "path": "dsa/challenges/palindromic-substrings/README.md",
+          "title": "README"
+        }
+      },
+      "pascal-triangle": {
+        "README.md": {
+          "path": "dsa/challenges/pascal-triangle/README.md",
+          "title": "README"
+        }
+      },
+      "power-of-three": {
+        "README.md": {
+          "path": "dsa/challenges/power-of-three/README.md",
+          "title": "README"
+        }
+      },
+      "power-of-two": {
+        "README.md": {
+          "path": "dsa/challenges/power-of-two/README.md",
+          "title": "README"
+        }
+      },
+      "prime-number-check": {
+        "README.md": {
+          "path": "dsa/challenges/prime-number-check/README.md",
+          "title": "README"
+        }
+      },
+      "print-matrix-inclockwise": {
+        "README.md": {
+          "path": "dsa/challenges/print-matrix-inclockwise/README.md",
+          "title": "README"
+        }
+      },
+      "print-patterns": {
+        "README.md": {
+          "path": "dsa/challenges/print-patterns/README.md",
+          "title": "README"
+        }
+      },
+      "product-sum-diff": {
+        "README.md": {
+          "path": "dsa/challenges/product-sum-diff/README.md",
+          "title": "README"
+        }
+      },
+      "reduce-to-zero": {
+        "README.md": {
+          "path": "dsa/challenges/reduce-to-zero/README.md",
+          "title": "README"
+        }
+      },
+      "remove-duplicates-inplace": {
+        "README.md": {
+          "path": "dsa/challenges/remove-duplicates-inplace/README.md",
+          "title": "README"
+        }
+      },
+      "remove-duplicates-sorted-linked-list": {
+        "README.md": {
+          "path": "dsa/challenges/remove-duplicates-sorted-linked-list/README.md",
+          "title": "README"
+        }
+      },
+      "remove-nth-node-from-end-of-list": {
+        "README.md": {
+          "path": "dsa/challenges/remove-nth-node-from-end-of-list/README.md",
+          "title": "README"
+        }
+      },
+      "reverse-integer": {
+        "README.md": {
+          "path": "dsa/challenges/reverse-integer/README.md",
+          "title": "README"
+        }
+      },
+      "running-sum": {
+        "README.md": {
+          "path": "dsa/challenges/running-sum/README.md",
+          "title": "README"
+        }
+      },
+      "same-tree": {
+        "README.md": {
+          "path": "dsa/challenges/same-tree/README.md",
+          "title": "README"
+        }
+      },
+      "search-insert-position": {
+        "README.md": {
+          "path": "dsa/challenges/search-insert-position/README.md",
+          "title": "README"
+        }
+      },
+      "self-dividing-numbers": {
+        "README.md": {
+          "path": "dsa/challenges/self-dividing-numbers/README.md",
+          "title": "README"
+        }
+      },
+      "sentence-capilisation": {
+        "README.md": {
+          "path": "dsa/challenges/sentence-capilisation/README.md",
+          "title": "README"
+        }
+      },
+      "shortest-distance-to-character": {
+        "README.md": {
+          "path": "dsa/challenges/shortest-distance-to-character/README.md",
+          "title": "README"
+        }
+      },
+      "shuffle-array": {
+        "README.md": {
+          "path": "dsa/challenges/shuffle-array/README.md",
+          "title": "README"
+        }
+      },
+      "shuffle-strings": {
+        "README.md": {
+          "path": "dsa/challenges/shuffle-strings/README.md",
+          "title": "README"
+        }
+      },
+      "smallest-substring": {
+        "README.md": {
+          "path": "dsa/challenges/smallest-substring/README.md",
+          "title": "README"
+        }
+      },
+      "sort-characters-by-frequency": {
+        "README.md": {
+          "path": "dsa/challenges/sort-characters-by-frequency/README.md",
+          "title": "README"
+        }
+      },
+      "string-permutation": {
+        "README.md": {
+          "path": "dsa/challenges/string-permutation/README.md",
+          "title": "README"
+        }
+      },
+      "string-search": {
+        "README.md": {
+          "path": "dsa/challenges/string-search/README.md",
+          "title": "README"
+        }
+      },
+      "sum-product-of-number": {
+        "README.md": {
+          "path": "dsa/challenges/sum-product-of-number/README.md",
+          "title": "README"
+        }
+      },
+      "swapping-nodes-in-linkedlist": {
+        "README.md": {
+          "path": "dsa/challenges/swapping-nodes-in-linkedlist/README.md",
+          "title": "README"
+        }
+      },
+      "toeplitz-matrix": {
+        "README.md": {
+          "path": "dsa/challenges/toeplitz-matrix/README.md",
+          "title": "README"
+        }
+      },
+      "tree-path-sum": {
+        "README.md": {
+          "path": "dsa/challenges/tree-path-sum/README.md",
+          "title": "README"
+        }
+      },
+      "two-sum": {
+        "README.md": {
+          "path": "dsa/challenges/two-sum/README.md",
+          "title": "README"
+        }
+      },
+      "valid-palindrome": {
+        "README.md": {
+          "path": "dsa/challenges/valid-palindrome/README.md",
+          "title": "README"
+        }
+      },
+      "valid-parentheses": {
+        "README.md": {
+          "path": "dsa/challenges/valid-parentheses/README.md",
+          "title": "README"
+        }
+      },
+      "vowels-in-string": {
+        "README.md": {
+          "path": "dsa/challenges/vowels-in-string/README.md",
+          "title": "README"
+        }
+      },
+      "word-reversal": {
+        "README.md": {
+          "path": "dsa/challenges/word-reversal/README.md",
+          "title": "README"
+        }
+      }
+    },
+    "data-structures": {
+      "README.md": {
+        "path": "dsa/data-structures/README.md",
+        "title": "README"
+      }
+    }
+  },
+  "frontend-knowledge": {
+    "design-patterns": {
+      "design-patterns.md": {
+        "path": "frontend-knowledge/design-patterns/design-patterns.md",
+        "title": "design-patterns"
+      },
+      "pubsub": {
+        "README.md": {
+          "path": "frontend-knowledge/design-patterns/pubsub/README.md",
+          "title": "README"
+        }
+      }
+    },
+    "javascript": {
+      "ES6": {
+        "README.md": {
+          "path": "frontend-knowledge/javascript/ES6/README.md",
+          "title": "README"
+        }
+      },
+      "README.md": {
+        "path": "frontend-knowledge/javascript/README.md",
+        "title": "JavaScript Knowledge Base"
+      },
+      "async-programming": {
+        "README.md": {
+          "path": "frontend-knowledge/javascript/async-programming/README.md",
+          "title": "Asynchronous Programming in JavaScript"
+        },
+        "promises.md": {
+          "path": "frontend-knowledge/javascript/async-programming/promises.md",
+          "title": "JavaScript Promises   A Deep, Conceptual, Textbook-Style Guide"
+        }
+      },
+      "closures-and-scope": {
+        "README.md": {
+          "path": "frontend-knowledge/javascript/closures-and-scope/README.md",
+          "title": "Closures & Scope"
+        }
+      },
+      "data-structures-and-types": {
+        "README.md": {
+          "path": "frontend-knowledge/javascript/data-structures-and-types/README.md",
+          "title": "Data Structures & Types"
+        }
+      },
+      "functions-and-this": {
+        "README.md": {
+          "path": "frontend-knowledge/javascript/functions-and-this/README.md",
+          "title": "Functions & `this` Context"
+        },
+        "memoization.md": {
+          "path": "frontend-knowledge/javascript/functions-and-this/memoization.md",
+          "title": "JavaScript Function Memoization  A Deep, Practical, and Theoretical Guide"
+        }
+      },
+      "general-polyfills": {
+        "README.md": {
+          "path": "frontend-knowledge/javascript/general-polyfills/README.md",
+          "title": "General Polyfills"
+        },
+        "polyfill.md": {
+          "path": "frontend-knowledge/javascript/general-polyfills/polyfill.md",
+          "title": "JavaScript Polyfills   Deep Dive"
+        }
+      },
+      "internals": {
+        "README.md": {
+          "path": "frontend-knowledge/javascript/internals/README.md",
+          "title": "JavaScript Internals"
+        },
+        "eventloop.md": {
+          "path": "frontend-knowledge/javascript/internals/eventloop.md",
+          "title": "JavaScript Event Loop   A Deep, Technical Guide (V8, Chrome, and Runtime Internals)"
+        }
+      },
+      "performance-optimization": {
+        "README.md": {
+          "path": "frontend-knowledge/javascript/performance-optimization/README.md",
+          "title": "Performance Optimization"
+        }
+      },
+      "prototypes-oop": {
+        "README.md": {
+          "path": "frontend-knowledge/javascript/prototypes-oop/README.md",
+          "title": "Prototypes & Object-Oriented JavaScript"
+        },
+        "jsprototype.md": {
+          "path": "frontend-knowledge/javascript/prototypes-oop/jsprototype.md",
+          "title": "JavaScript Prototype Inheritance - A Deep, Conceptual Guide"
+        }
+      }
+    },
+    "react": {
+      "general-react-interview-questions.md": {
+        "path": "frontend-knowledge/react/general-react-interview-questions.md",
+        "title": "general-react-interview-questions"
+      },
+      "hooks.md": {
+        "path": "frontend-knowledge/react/hooks.md",
+        "title": "hooks"
+      },
+      "lifecycle-methods-equivalent-hooks.md": {
+        "path": "frontend-knowledge/react/lifecycle-methods-equivalent-hooks.md",
+        "title": "lifecycle-methods-equivalent-hooks"
+      },
+      "reactinterviewquestions.md": {
+        "path": "frontend-knowledge/react/reactinterviewquestions.md",
+        "title": "Top 100 Frequently Asked React.js Interview Questions & Answers (Senior Level)"
+      }
+    },
+    "system-design": {
+      "README.md": {
+        "path": "frontend-knowledge/system-design/README.md",
+        "title": "README"
+      }
+    }
+  },
+  "interview-resources": {
+    "checklists": {
+      "README.md": {
+        "path": "interview-resources/checklists/README.md",
+        "title": "README"
+      }
+    },
+    "common-questions": {
+      "FAQ.md": {
+        "path": "interview-resources/common-questions/FAQ.md",
+        "title": "FAQ"
+      },
+      "common-questions.md": {
+        "path": "interview-resources/common-questions/common-questions.md",
+        "title": "common-questions"
+      },
+      "general-interview-questions.md": {
+        "path": "interview-resources/common-questions/general-interview-questions.md",
+        "title": "general-interview-questions"
+      }
+    },
+    "js-coding-drills": {
+      "general-practice": {
+        "README.md": {
+          "path": "interview-resources/js-coding-drills/general-practice/README.md",
+          "title": "General JavaScript Coding Drills"
+        }
+      }
+    }
+  }
+}
