@@ -540,7 +540,7 @@
       "ES6": {
         "README.md": {
           "path": "frontend-knowledge/javascript/ES6/README.md",
-          "title": "README"
+          "title": "ECMAScript Evolution (ES6 → ES10)"
         }
       },
       "README.md": {
@@ -614,6 +614,12 @@
           "path": "frontend-knowledge/javascript/prototypes-oop/jsprototype.md",
           "title": "JavaScript Prototype Inheritance - A Deep, Conceptual Guide"
         }
+      }
+    },
+    "nextjs": {
+      "NextJS.md": {
+        "path": "frontend-knowledge/nextjs/NextJS.md",
+        "title": "NextJS"
       }
     },
     "react": {
