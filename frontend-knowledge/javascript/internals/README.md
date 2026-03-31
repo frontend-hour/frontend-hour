@@ -12,51 +12,15 @@ Looking under the hood of the JavaScript runtime.
 - **[event-loop.js](event-loop.js)**: Code demonstrating event loop phases.
 - **[eventBubbling.html](eventBubbling.html)**: Visualizing event propagation in the DOM.
 - **[recursion.js](recursion.js)**: Examples of recursive functions.
+- **[iterators-generators.md](iterators-generators.md)**: A deep dive into Iterators, Iterable protocol, and Generators.
 - **[iterators-generators.js](iterators-generators.js)**: Using generator functions.
 
 ## Deep Dive
 
 ### Iterators and Generators
 
-An iterator lets you iterate through a collection's contents one at a time, pausing at each item.  
-An iterator is any object that implements the iterator protocol by having a next() method that returns a value property and a done property.
-Generator is also kind of iterator when called returns and interable that pipelines all the yeild values one after the other on every next call on the returned iterable.
-yeild is like pause or temporary return form the function.
+An **iterator** provides a way to sequentially step through a collection or complex data structure. It exposes a `next()` method that returns the items sequentially. 
 
-```javascript
-function createIterator(array) {
-  let count = 0;
-  return function next() {
-    let item = array[count];
-    count += 1;
-    return item;
-  };
-}
+**Generators** abstract away the complexity of keeping the internal state while creating an Iterator manually. Using `function*` and `yield`, a function's execution can be paused and later resumed from the outside.
 
-const names = ['a', 'b', 'c'];
-const namesIterator = createIterator(names);
-
-console.log(namesIterator);
-console.log(namesIterator());
-console.log(namesIterator());
-console.log(namesIterator());
-
-function* createFlow() {
-  let x = 0;
-  let y = 90;
-  let result = x + y;
-  yield `Frontend Hour ${result}`;
-
-  const newNum = yield 'returnVal';
-
-  const num = 10 + newNum;
-  yield num;
-}
-
-const generatorFlow = createFlow();
-
-console.log(generatorFlow.next());
-console.log(generatorFlow.next());
-console.log(generatorFlow.next(10));
-console.log(generatorFlow.next());
-```
+👉 **[Read the comprehensive guide on Iterators and Generators](./iterators-generators.md)** for a deep dive on how they work, the Two-way communication model, Delegation (`yield*`), and their use cases.

@@ -205,6 +205,8 @@ for (const value of array) {}
 
 This is fundamentally different from `for...in`.
 
+👉 **[See the comprehensive deep dive on Iterators and Generators](../internals/iterators-generators.md)** for more details on the Iterator protocol, custom iterables, and the Two-way communication model using Generators.
+
 ---
 
 ## 1.7 Rest & Spread
